@@ -1,0 +1,1489 @@
+{ "intents": 
+    [
+        {"tag": "greeting",
+            "patterns": ["Hai", "Hi", "Halo", "hallo", "hello", "helo", "hey" ,"Apa Kabar"],
+            "responses": ["Hallo!", "Hai", "Halo selamat datang", "Hai Kawan"]
+        },
+
+        {"tag":"greeting1",
+            "patterns":["selamat pagi", 
+                    "hai selamat pagi min?",
+                    "pagi kakak ?"],
+            "responses":["Iya, Selamat Pagi Apakah ada sesuatu yang ingin anda tanyakan terkait Gangguan Mental"]
+        },
+
+        {"tag":"greeting2",
+            "patterns":["selamat siang", 
+                    "hai selamat siang min?",
+                    "siang kakak ?"],
+            "responses":["Iya, Selamat Siang Apakah ada sesuatu yang ingin anda tanyakan terkait Gangguan Mental"]
+        },
+    
+        {"tag":"greeting3",
+            "patterns":["selamat sore", 
+                    "hai selamat sore min?",
+                    "sore kakak ?"],
+            "responses":["Iya, Selamat Sore Apakah ada sesuatu yang ingin anda tanyakan terkait Gangguan Mental"]
+        },
+    
+        {"tag":"greeting4",
+            "patterns":["selamat malam",
+                    "hai selamat malam min?", 
+                    "malam kakak"],
+            "responses":["Iya, Selamat Malam Apakah ada sesuatu yang ingin anda tanyakan terkait Gangguan Mental"]
+        },
+        
+        {"tag": "namaBot",
+            "patterns": ["kamu siapa", "nama kamu siapa", "siapa namamu", "apa nama kamu ", "siapa nama kamu"],
+            "responses": ["Aku adalah NALAR, ada yang bisa aku bantu ?", "Nama Ku NALAR, apakah ada yang bisa Aku bantu Kawan?"]
+        },
+
+        {"tag":"tugas",
+            "patterns":["apa tugasmu",
+                    "apa saja yang kamu bisa",
+                    "tugasmu ngapain sih",
+                    "bagaimana anda bisa membantu saya?", 
+                    "apa yang dapat kamu lakukan?", 
+                    "bantuan apa yang anda berikan?", 
+                    "apakah kamu bisa membantuku?"],
+            "responses":["Aku dapat memberikan beberapa informasi terkait Gangguan Mental atau Mentalhealth"]
+        },
+        
+        {"tag": "noAnswer",
+            "patterns":[""],
+            "responses":["Maaf, Saya tidak mengerti yang Anda maksud"]
+        },
+
+        {"tag": "bye",
+            "patterns": ["terimakasih", "makasih", "bye", "ok ", "Ok makasih", "Sampai Jumpa Lagi", "Ok bye"],
+            "responses": ["Sampai jumpa lagi, Kalau ada masalah hubungi aku lagi yaa!!! Semoga harimu menyenangkan!!!"]
+        },
+
+        {"tag": "menghilangkanStres",
+            "patterns": ["bagaimana cara untuk menghilangkan stres berat", 
+                        "bagaimana cara untuk mengatasi rasa stres",
+                        "menghilangkan stres",
+                        "cara mengilangkan stres",
+                        "cara menghilangkan rasa stres akibat pekerjaan"],
+            "responses": ["Melakukan aktivitas yang membuat rileks, seperti yoga, meditasi, dan menulis buku harian. Menjalani hobi yang Anda sukai. Apabila muncul impuls untuk menyakiti diri sendiri, alihkan dengan kegiatan lain, seperti meremas kertas, atau segera hubungi sahabat atau kerabat terdekat. Menjalani gaya hidup yang sehat. Mengelola stres dengan baik."]
+        },
+
+        {"tag": "penyebaStresberat",
+            "patterns": ["Penyebab stres berat",
+                        "apa yang membuat orang stres berat",
+                        "apa faktor yang bikin orang stres", 
+                        "apa yang menyebabkan orang mengalami stres berat"],
+            "responses": ["Penyebabnya muncul karena diperparah oleh suatu gangguan kejiwaan, seperti gangguan kepribadian ambang, gangguan kepribadian skizoid, gangguan stres pasca trauma, gangguan depresi, skizofrenia, dan sebagainya. periksalah langsung ke dokter atau psikiater terdekat"]
+        },
+
+        {"tag": "penangananStres",
+            "patterns": ["Penanganan stres dan melampiaskan kemarahan terhadap anak",
+                        "cara menangani stres terhadap keluarga",
+                        "bagaimana cara kita mengatasi stres akibat keluarga", 
+                        "bagaimana cara menangani atau mengatasi stres akibat anak dan keluarga"],
+            "responses": ["Saran kami, Anda lakukanlah dulu: Dekatkan lagi diri Anda pada Tuhan, Jalin komunikasi yang baik dengan suami dan anak, Saat sedang stres menghadapi suami, sediakan waktu untuk menyendiri. Jangan lupa membuat diri Anda rileks dan bahagia. perkembangannya, jangan lelah belajar terus cara mengeksplorasi bakat anak. Bekerja sama dengan suami dalam mengurus anak-anak Anda. Disiplin menjalani gaya hidup sehat."]
+        },
+
+        {"tag": "mengatasiKecemasanHistrionik",
+            "patterns": ["Bagaimana cara menghadapi penderita Gangguan Kecemasan Histrionik",
+                        "mengatasi gangguan kecemasan",
+                        "cara menghilangkan kecemasan", 
+                        "mengatasi penderita Gangguan Kecemasan Histrionik"],
+            "responses": ["Bagi Anda yang memiliki kerabat dengan Gangguan Kecemasan Histrionik (HPD). Cobalah mengerti bahwa apa yang ia alami merupakan suatu penyakit, bukan semata-mata karena kemauannya, sehingga tidak tepat jika Anda menstigmanya dengan negatif, doakan rekan Anda agar mendapat kesembuhan. Sadarkan ia bahwa ia memerlukan pengobatan, arahkan ia untuk berkonsultasi dengan dokter atau psikiater terdekat agar mendapat penanganan yang tepat. Tetap jalin komunikasi yang baik dengannya, jadilah pendengar yang baik, beri ia saran yang membangun demi kebaikannya sendiri. Berkoordinasi dengan keluarga dan orang terdekatnya untuk membuatnya menjadi lebih baik, sadarkan mereka atas kondisi yang rekan Anda alami dan arahkan cara penanganannya."]
+        },
+
+        {"tag": "tidakPercayaDiri",
+            "patterns": ["Cara mengatasi rasa tidak percaya diri dan suka mengkritik orang lain", 
+                        "bagaimana cara mengatasi rasa tidak percaya diri",
+                        "bagaimana cara menghilangkan rasa kurang percaya diri"],
+            "responses": ["Untuk mengatasinya, Anda dapat menetapkan batasan antara diri sendiri dan orang tua seperti bersikap asertif yaitu tegas dan percaya diri dalam berkomunikasi tanpa memancing respon negatif dari lawan bicara. Anda dapat mengomunikasikan hal yang membuat Anda tidak nyaman kepada orang dengan penyampaian dan alasan yang baik agar orang dapat memahami diri Anda. Selain itu, Anda dapat mengalihkan kritik yang sering diutarakan kepada Anda dengan pencapaian yang telah Anda lakukan selama ini untuk sekaligus meningkatkan kepercayaan diri Anda kepada orang."]
+        },
+
+        {"tag" : "menenangkanDiri",
+            "patterns": ["Bagaimana cara menenangkan diri ?", 
+                        "cara menenangkan diri yang benar",
+                        "gimana caranya menenangkan diri ketika terjadi sesuatu yang bikin panik"],
+            "responses": ["Tarik napas dalam perlahan selama lima detik, tahan lima detik, keluarkan perlahan selama lima detik, Pusatkan pikira]n pada aktivitas yang Anda jalani, Menerapkan metode 3-3-3, Hindari minuman berkafein dan beralkohol, Bercerita kepada orang yang dekat dan Anda percayai, Sediakan waktu untuk diri Anda sendiri, lakukan hal menyenangkan yang Anda sukai, Istirahat cukup, 7-8 jam per hari, Makan yang teratur dan bergizi, serta minum air mineral yang cukup"]
+        },
+
+        {"tag": "gangguanMentalRemaja",
+            "patterns": ["Bagaimana cara menangani penyakit gangguan mental pada remaja",
+                        "menangati gangguan pada remaja", 
+                        "cara mengatasi gangguan mental pada remaja"],
+            "responses": ["Perlu dilakukan pengobatan rutin seperti dengan mengonsumsi rutin obat antidepresan, obat antipsikotik, obat anti anxietas, dan mood stabilizer. keluarga juga perlu mendampingi dengan menemaninya dalam kegiatan sehari-hari, mendukung untuk berpartisipasi aktif pada aktivitas yang disenangi, ajak untuk menerapkan pola hidup sehat, serta ajak untuk selalu bercerita ketika sedang mengalami masalah."]
+        },
+
+        {"tag": "sifatAlterEgo",
+            "patterns": ["Apa itu sifat alter ego?",
+                        "alter ego",
+                        "pengertian alter ego",
+                        "apasih artinya alter ego"],
+            "responses": ["Alter ego adalah sebuah identitas atau karakter yang merupakan karakter yang sengaja dibentuk oleh seseorang. Karakter ini sering kali merupakan gambaran ideal tentang diri seseorang yang tidak bisa direalisasikan."]
+        },
+
+        {"tag" : "alterEgoBagiOrang ",
+            "patterns": ["Alter ego apakah normal bagi setiap orang",
+                        "apakah setiap orang memiliki sifat alter ego"],
+            "responses": ["Sebenarnya, setiap orang berpotensi memiliki alter ego. Namun pada beberapa kondisi, Anda mungkin tak sadar telah memilikinya, karena pemahaman mengenai fenomena ini memang masih berbeda-beda, seperti: Seseorang yang memiliki alter ego dalam bentuk suara dalam kepalanya."]
+        },
+
+        {"tag": "ciriAlterEgo",
+            "patterns": ["ciri-ciri orang yang memiliki alter ego", 
+                        "ciri ciri sifat alter ego",
+                        "cara mengetahui orang yang memiliki sifat alter ego",
+                        "bagaimana cara mengetahui teman atau sodara kita memiliki sifat alter ego"],
+            "responses": ["Alter ego merupakan kondisi dimana seseorang memiliki kepribadian yang jauh berbeda dari diri sendirinya. Ciri-ciri alter ego seperti memiliki sifat berbeda, emosi tidak stabil, memiliki gangguan personaliti, dan sebagainya. Alter ego dapat muncul pada gangguan mental yaitu Dissociative identity disorder(DID)"]
+        },
+
+        {"tag": "berbahayaAlterEgo",
+            "patterns": ["Apakah sifat alter ego bisa membahayakan orang disekitarnya",
+                        "apa orang yang memiliki sifat alter ego berbahaya",
+                        "ketika kita memiliki sifat alter ego apakah bisa membahayakan orang di sekitar kita"],
+            "responses": ["Alter Ego Tak Melulu Karakter yang Lebih Buruk, Padahal alter ego sendiri tidak pasti kepribadian yang buruk. \u201cBetul, tidak semua karakter alter ego itu lebih jahat atau lebih buruk. Ada yang justru lebih baik. Karena seperti yang sempat disinggung tadi, alter ego ini karakter yang lebih ideal"]
+        },
+
+        {"tag": "penyebabAlterEgo",
+            "patterns": ["Apa penyebab orang memiliki sifat alter ego?",
+                        "apasih yang menyebabkan orang memiliki sifat alter ego",
+                        "faktor penyebab alter ego",
+                        "faktor yang menyebabkan alter ego",
+                        "bagaimana orang bisa memiliki sifat alter ego"],
+            "responses": ["Penderita alter ego trauma terhadap masa lalunya yang suram. Penderita alter ego memiliki tujuan tertentu dalam hidupnya. Penderita alter ego sering merasa kesepian, Sering dicuekkin, Penderita alter ego membutuhkan lawan bicara."]
+        },
+
+        {"tag": "kenapaAlteregoKeluar",
+            "patterns": ["Kenapa seseorang bisa memiliki alter ego",
+                        "kenapa bisa keluar sifat alter ego",
+                        "kenapa alter ego bisa muncul",
+                        "bagaimana orang bisa mengeluarkan sifat alter ego"],
+            "responses": ["Alter ego biasanya diciptakan atau keluar karena seseorang merasa dirinya tidak bisa menjadi seperti yang dirinya inginkan (kurang percaya diri), atau bersikap sebagaimana yang dirinya inginkan, atau tidak bisa memiliki suatu kehidupan yang sebenarnya dirinya inginkan, sehingga orang tersebut membentuk suatu kepribadian lain"]
+        },
+
+        {"tag": "perbedaanAlteregoKepribadianganda",
+            "patterns": ["Apakah Alter Ego sama dengan Kepribadian ganda?",
+                        "apa perbedaan alter ego dan kepribadian ganda",
+                        "alter ego dan kepribadian ganda",
+                        "bedanya alter ego dan kepribadian ganda"],
+            "responses": ["Banyak orang yang mengira kepribadian ganda sama dengan alter ego, padahal keduanya adalah hal yang sangat berbeda. Alter ego sendiri biasanya di bawah kendali seseorang dan ia bisa membawa manfaat. Sementara itu kepribadian ganda adalah gangguan kesehatan mental yang umumnya terjadi akibat trauma berat di masa lalu"]
+        },
+
+        {"tag": "gagalFokus",
+            "patterns": ["Cara mengatasi Sering gagal fokus, suka melamun, dan mudah tersinggung",
+                        "bagaimana cara agar kita bisa tetap fokus",
+                        "cara menghilangkan gagal fokus dan suka melamun"],
+            "responses": ["menceritakan atau berbagi cerita pada orang terdekat, melakukan hal yang menyenangkan, melakukan relaksasi seperti meditasi atau yoga, hindari konsumsi obat sembarangan apalagi obat terlarang, dekatkan diri dengan Tuhan, konsumsi makanan yang anda suka dengan porsi sedikit saja namun sering"]
+        },
+
+        {"tag": "mengatasiSulittidur",
+            "patterns": ["Cara mengatasi Sulit tidur, kehilangan minat, dan merasa lelah",
+                        "cara menghilangkan susah tidur",
+                        "bagaimana cara agar tidur nyenyak"],
+            "responses": ["Tidur yang cukup 7-9 jam sehari, usahakan untuk saat tidur matikan lampu, jauhi gadget anda bisa membaca buku atau mendengarakan musik slow, hindari konsumsi kafein, Melakukan meditasi dan yoga"]
+        },
+
+        {"tag": "perbedaanDepresi",
+            "patterns": ["Perbedaan gejala depresi dan kondisi sudah depresi",
+                        "depresi dan sudah depresi", 
+                        "apa bedanya depresi dan sudah depresi"],
+            "responses": ["Depresi adalah suatu gangguan suasana hati yang ditandai dengan afek sedih yang berlebihan, bertahan hingga lebih dari 2 minggu, sehingga membuat produktifitas dan interaksi sosialnya menjadi terganggu. Sedangkan gejala Penderita depresi merasa murung, selalu dihantui perasaan bersalah, tidak berguna, tidak berdaya, malas mengurus diri, acuh terhadap kondisi lingkungan di sekitarnya. Kerap juga, depresi membuat munculnya beragam keluhan fisik, seperti gangguan tidur, perubahan pola makan, nyeri-nyeri badan, pusing, lemas, selalu lelah, dan sebagainya."]
+        },
+
+        {"tag": "Depresi",
+            "patterns": ["Apa sih depresi dan ciri-cirinya",
+                        "depresi",
+                        "depresi adalah",
+                        "pengertian depresi",
+                        "bagaimana orang yang mengalami depresi",
+                        "ciri-ciri orang yang depresi"],
+            "responses": ["Depresi adalah gangguan suasana hati (mood) yang ditandai dengan perasaan sedih yang mendalam dan kehilangan minat terhadap hal-hal yang disukai Ciri psikologis orang yang depresi adalah rasa cemas dan khawatir yang berlebihan, emosi yang tidak stabil, serta rasa putus asa atau frustrasi. Sementara itu, ciri-ciri fisik pada seseorang yang depresi adalah selalu merasa lelah dan tak bertenaga, pusing dan nyeri tanpa penyebab yang jelas, serta menurunnya selera makan."]
+        },
+
+        {"tag": "mengatasiDepresi",
+            "patterns": ["Bagaimana cara mengatasi atau mengobati penderita depresi",
+                        "cara menghilangkan rasa depresi",
+                        "mengilangkan depresi",
+                        "bagaimana cara agar kita atau teman, sodara kita mengalami depresi akibat sesuatu"],
+            "responses": ["Melakukan psikoterapi atau terapi psikologis, Memberikan obat antidepresan, Menjalani perawatan di rumah sakit jika mengalami depresi yang parah"]
+        },
+
+        {"tag": "gangguanMentalTerbanyak",
+            "patterns": ["Apa masalah kesehatan mental terbanyak yang dikeluhkan saat pandemi", 
+                        "gangguan mental terbanyak saat ini", 
+                        "gangguan mental apa saja yang sering terjadi di indonesia saat ini"],
+            "responses": ["Gangguan Cemas, Depresi dan Trauma"]
+        },
+
+        {"tag": "mulaiAware",
+            "patterns": ["Kapan kita harus aware terhadap kesehatan mental", 
+                        "dari kapan kita mulai aware pada kesehatan mental"],
+            "responses": ["Kesadaran tentang kesehatan mental sejak dari sedini mungkin. Kesehatan mental wajib dijaga oleh semua usia dari anak sampai lansia. Tiada kesehatan tanpa sehat jiwa"]
+        },
+
+        {"tag": "menjagakesehatanMental",
+            "patterns": ["Cara Menjaga Kesehatan Mental Saat Pandemi saat ini",
+                        "cara menjaga kesehatan mental",
+                        "bagaimana cara menjaga kesehatan mental yang baik"],
+            "responses": ["Jaga kesehatan jasmani dengan kecukupan tidur, gizi seimbang, olahraga dan aktivitas fisik, Batasi asupan berita dan bijak memilah informasi, Berinteraksi dan komunikasi dengan keluarga dan sahabat, Melakukan relaksasi, meditasi dan berbagai kegiatan yang menyenangkan, Menghindari kebiasaan mengkonsumsi rokok, alkohol atau penggunaan zat adiktif lainnya, Berusaha tetap berpikir positif dan bersyukur dalam menghadapi situasi saat ini. Mencari bantuan pendampingan profesional kesehatan mental seperti Psikiater dan atau Psikolog"]
+        },
+
+        {"tag" : "pengertianAdhdaliasAttentiondeficithyperactivitydisorder",
+            "patterns": ["Apa Itu adhd", 
+                        "adhd", 
+                        "attention-deficit hyperactivity disorder",
+                        "apasih pengertian adhd", 
+                        "pengertian gangguan mental attention-deficit hyperactivity disorder"],
+            "responses": ["ADHD alias Attention-deficit hyperactivity disorder adalah istilah medis untuk gangguan mental yang ditandai dengan perilaku impulsif dan hiperaktif. gangguan yang menyerang anak-anak dan membuat pengidapnya kesulitan untuk memusatkan perhatian pada satu hal dalam satu waktu"]
+        },
+
+        {"tag": "gejalaPenderitaAdhd",
+            "patterns":["apa saja gejala penderita gangguan adhd",
+                        "gejala gangguan mental adhd", 
+                        "gejala yang muncul pada orang penderita gangguan mental adhd", 
+                        "cara mengetahui orang yang memiliki gangguan mental adhd atau attention-deficit hyperactivity disorder"],
+            "responses": ["Tidak memperhatikan, mudah terdistraksi, pelupa, kehilangan fokus. Hiperaktif seperti tampak bersemangat, selalu gelisah, berlarian, sulit untuk bersantai, sering mengganggu orang lain, Impulsif bertindak tanpa memikirkan konsekuensi."]
+        },
+
+        {"tag": "penyebabAdhd",
+            "patterns": ["Apa yang menyebabkan adhd",
+                        "penyebab gangguan mental adhd",
+                        "penyebab gangguan mental adhd atau attention-deficit hyperactivity disorder",
+                        "apa yang penyebab gangguan adhd atau attention-deficit hyperactivity disorder", 
+                        "yang menyebabkan terjadinya gangguan adhd atau attention-deficit hyperactivity disorder"],
+            "responses": ["Penyebabnya diduga bisa muncul akibat ada ketidakseimbangan senyawa kimia (neurotransmitter) di dalam otak. Faktor genetik. Faktor lingkungan. Kelahiran prematur dan Ibu yang menggunakan obat-obatan terlarang, mengonsumsi alkohol, atau merokok selama masa kehamilan"]
+        },
+
+        {"tag": "mengobatiAdhd",
+            "patterns": ["Bagaimana cara mengobati orang yang memiliki gangguan adhd atau attention-deficit hyperactivity disorder", 
+                        "cara mengatasi gangguan adhd atau attention-deficit hyperactivity disorder ",
+                        "cara mengatasi  attention-deficit hyperactivity disorder ",
+                        "cara mengatasi adhd ",
+                        " Gimanasih cara mengatasi gangguan adhd atau attention-deficit hyperactivity disorder "],
+            "responses": ["Obat-obatan untuk membantu pengidap lebih tenang dan mengurangi sikap impulsif, terapi psikologi, CBT (cognitive behavioural therapy) terapi untuk mengubah pola pikir dan perilaku saat mengalami masalah dalam hidupnya, Pelatihan interaksi sosial pada masyarakat"]
+        },
+
+        {"tag": "mencegahAdhd",
+            "patterns": ["Bagaimana cara mencegah terjadinya adhd", 
+                        "bagaimana cara agar kita terhindar dari gangguan mental adhd alias attention-deficit hyperactivity disorder",
+                        "cara mencegah terjadinya adhd",
+                        "mencegah terjadinya adhd"],
+            "responses": ["Pencegahannya dimulai dari masa kehamilan. Ibu hamil disarankan untuk tidak merokok, tidak mengonsumsi minuman beralkohol dan obat-obatan terlarang, serta sebisa mungkin menjauhkan anak dari asap rokok dan paparan zat beracun yang bisa membahayakan kesehatan"]
+        },
+
+        {"tag": "pengertianAgoraphobia",
+            "patterns": ["Apasih Agoraphobia?",
+                        "agoraphobia adalah",
+                        "agoraphobia",
+                        "apa itu agoraphobia",
+                        "pengertian gangguan mental agoraphobia",
+                        "apa yang dimaksud gangguan mental agoraphobia",
+                        "jelaskan apa itu agoraphobia",
+                        "apa itu gangguan mental agoraphobia"],
+            "responses": ["Agoraphobia atau agorafobia merupakan salah satu jenis gangguan cemas yang menimbulkan perasaan ketakutan dan khawatir yang berlebih ketika berada di tempat tertentu"]
+        },
+
+        {"tag": "gejalaAgorahobia",
+            "patterns": ["gejala orang penderita Agoraphobia?",
+                        "ciri-ciri orang yang memiliki gangguan mental agoraphobia",
+                        "Jika orang menderita agoraphobia apa gejalanya",
+                        "ciri-ciri agoraphobia",
+                        "bagaimana cara kita mengetahui gejala gangguan mental agoraphobia"],
+            "responses": ["gejalanya mulai dari detak jantung yang cepat, napas yang cepat, merasa panas dan berkeringat atau merasa dingin, merasa sakit (tidak enak badan), mual atau diare, nyeri dada."]
+        },
+
+        {"tag": "penyebabAgoraphobia",
+            "patterns": ["Apa yang menyebabkan penderita Agoraphobia?",
+                        "penyebab agoraphobia",
+                        "apa yang menyebabkan timbulnya gangguan agoraphobia",
+                        "apa saja yang menyebabkan gangguan mental agoraphobia",
+                        "apa yang memicu agoraphobia",
+                        "agoraphobia disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena gangguan agoraphobia"],
+            "responses": ["Penyebab terkait dengan adanya riwayat gangguan panik, gangguan cemas yang disertai panik, dan berada pada situasi tertentu yang dapat memicu ketakutan yang berlebih, panik sendiri, traumatik atau stressor sebelumnya"]
+        },
+
+        {"tag": "mengetahuiAgoraphobia",
+            "patterns": ["Bagaimana cara kita mengetahui orang penderita agoraphobia?",
+                        "cara mengetahui orang yang menderita gangguan mental agoraphobia"],
+            "responses": ["Pengidap menghindari situasi tertentu karena yakin akan merasa terjebak atau dapat mengalami serangan panik, ketakutan yang dialami atau upaya menghindari (avoidance) terjadi terus-menerus, berlangsung selama 6 bulan atau lebih."]
+        },
+
+        {"tag": "pengobatanAgoraphobia",
+            "patterns": ["Bagaimana cara mengobati penderita gangguan mental agoraphobia ?",
+                        "cara pengobatan bagi penderita gangguan mental agoraphobia",
+                        "Bagaimana pengobatan agoraphobia",
+                        "Pengobatan seperti apa yang dapat dilakukan untuk gangguan mental agoraphobia",
+                        "Apa yang harus dilakukan untuk menangani gangguan mental agoraphobia",
+                        "apa yang perlu dilakukan untuk mengobati gangguan mental agoraphobia"],
+            "responses": ["Menjalani psikoterapi dengan psikolog atau psikiater untuk mencoba melakukan perubahan pola hidup (seperti olahraga teratur, makan-makanan yang sehat, dan mencegah konsumsi alkohol) dan teknik self-help untuk menangani gejala yang dialami. selanjutnya, jika tidak membaik, pengidap menjalani program guided self-help. Apabila Kedua langkah tersebut tidak memberikan hasil yang baik, maka kemungkinan perlu dilakukan Cognitive Behavioral Therapy (CBT)"]
+        },
+
+        {"tag": "mencegahAgoraphobia",
+            "patterns": ["Cara mencegah gangguan mental agoraphobia?",
+                        "bagaimana cara agar kita terhidar dari gangguan mental agoraphobia",
+                        "Pencegahan terhadap agoraphobia",
+                        "Upaya pencegahan gangguan mental agoraphobia",
+                        "langkah pencegahan dari gangguan mental  agoraphobia",
+                        "tips terhindar dari gangguan mental  agoraphobia",
+                        "Yang dapat dilakukan agar tidak mengalami gangguan mental  agoraphobia",
+                        "Apa yang harus dilakukan untuk menangani gangguan mental  agoraphobia",
+                        "cara menghindari supaya kita atau sodara kita terhindar dari gangguan mental agoraphobia"],
+            "responses": ["Tidak ada cara khusus untuk mencegah agoraphobia, tetapi terapi psikoterapi diharapkan dapat membantu mengurangi gejala yang dialami."]
+        },
+
+        {"tag": "pengertianAnoreksia",
+            "patterns": ["Penyebab gangguan mental anoreksia",
+                        "apa itu anoreksia",
+                        "anoreksia",
+                        "anoreksia ialah",
+                        "anoreksia adalah",
+                        "apa yang dimaksud anoreksia",
+                        "pengertian anoreksia",
+                        "penjabaran anoreksia",
+                        "apa yang dimaksud anoreksia"],
+            "responses": [" Anoreksia, atau secara medis dikenal dengan istilah anoreksia nervosa, merupakan gangguan makan yang ditandai dengan penurunan berat badan yang drastis"]
+        },
+
+        {"tag": "penyebabAnoreksia",
+            "patterns": ["Penyebab gangguan mental anoreksia",
+                        "Apa yang menyebabkan penderita anoreksia?",
+                        "penyebab agoraphobia",
+                        "apa yang menyebabkan timbulnya gangguan anoreksia",
+                        "apa saja yang menyebabkan gangguan mental anoreksia",
+                        "apa yang memicu anoreksia",
+                        "anoreksia disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena gangguan anoreksia",
+                        "apa yang bisa menyebabkan orang bisa terkena gangguan mental anoreksia",
+                        "kenapa orang bisa menderita gangguan mental anoreksia "],
+            "responses": ["anoreksia umumnya dialami oleh wanita. Gangguan mental ini juga dapat menyerang semua kelompok usia, tetapi lebih sering terjadi pada remaja. Lingkungan keluarga yang tidak harmonis, Riwayat peristiwa yang menyebabkan trauma, Kelahiran prematur"]
+        },
+
+        {"tag" : "gejalaAnoreksia",
+            "patterns": ["apa gejala bagi orang yang menderita gangguan mental anoreksia",
+                        "bagaimana kita bisa mengetahui orang yang memiliki gangguan mental anoreksia",
+                        "cara mengetahui penderita gangguan mental anoreksia",
+                        "gejala orang penderita anoreksia?",
+                        "tanda orang yang mempunyai anoreksia?",
+                        "gejala orang yang memiliki gangguan mental anoreksia",
+                        "Jika orang menderita anoreksia apa gejalanya",
+                        "gejala anoreksia",
+                        "bagaimana cara kita mengetahui gejala gangguan mental anoreksia",
+                        "gejala apa saja yang muncul bagi penderita gangguan mental anoreksia"],
+            "responses": ["Anoreksia nervosa menimbulkan tanda dan gejala pada fisik, emosional, dan perilaku penderitanya"]
+        },
+
+        {"tag": "mengobatAnoreksia",
+            "patterns": ["Cara mengobati penderita gangguan mental anoreksia",
+                        "Bagaimana cara mengobati penderita gangguan mental anoreksia",
+                        "cara pengobatan bagi penderita gangguan mental anoreksia",
+                        "Bagaimana pengobatan anoreksia",
+                        "Pengobatan seperti apa yang dapat dilakukan untuk gangguan mental anoreksia",
+                        "Apa yang harus dilakukan untuk menangani gangguan mental anoreksia",
+                        "apa yang perlu dilakukan untuk mengobati gangguan mental anoreksia",
+                        "bagaimana cara pengobatan bagi orang yang memiliki gangguan mental anoreksia"],
+            "responses": ["Tindakan medis rawat inap bertujuan agar dokter bisa melakukan pemantauan rutin pada tanda vital pasien. Dan bisa melalui prikoterapi"]
+        },
+
+        {"tag": "pengertiaAutisme",
+            "patterns": ["Penyebab gangguan mental autisme",
+                        "apa itu autisme",
+                        "autisme",
+                        "autisme ialah",
+                        "autisme adalah",
+                        "apa yang dimaksud autisme",
+                        "pengertian autisme",
+                        "penjabaran autisme",
+                        "apa yang dimaksud autisme"],
+            "responses": ["Autisme adalah kelainan perkembangan saraf yang menyebabkan gangguan perilaku dan interaksi sosial. Gejala penyakit ini lebih sering terdeteksi pada masa kanak-kanak, tetapi juga dapat ditemukan ketika dewasa."]
+        },
+
+        {"tag": "penyebabAutisme",
+            "patterns": ["apa penyebab autisme",
+                        "Penyebab gangguan mental autisme",
+                        "Apa yang menyebabkan penderita autisme?",
+                        "penyebab autisme adalah",
+                        "apa yang menyebabkan timbulnya gangguan autisme",
+                        "apa saja yang menyebabkan gangguan mental autisme",
+                        "apa yang memicu anoreksia",
+                        "anoreksia disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena gangguan autisme",
+                        "apa yang bisa menyebabkan orang bisa terkena gangguan mental autisme",
+                        "kenapa orang bisa menderita gangguan mental autisme ",
+                        "apa yang menyebabkan orang memiliki gangguan autisme"],
+            "responses": ["Menurut National Institute of Neurological Disorders and Stroke (NINDS), autisme disebabkan oleh kombinasi faktor genetik dan lingkungan. Penelitian terbaru mengonfirmasi beberapa kelainan genetik yang dapat memengaruhi seseorang terhadap autisme"]
+        },
+
+        {"tag": "pengobatanAutisme",
+            "patterns": ["bagaimana cara pengobatan gangguan autisme",
+                        "Cara mengobati penderita gangguan mental autisme",
+                        "Bagaimana cara mengobati penderita gangguan mental autisme",
+                        "cara pengobatan bagi penderita gangguan mental autisme",
+                        "Bagaimana pengobatan autisme",
+                        "Pengobatan seperti apa yang dapat dilakukan untuk gangguan mental autisme",
+                        "Apa yang harus dilakukan untuk menangani gangguan mental autisme",
+                        "apa yang perlu dilakukan untuk mengobati gangguan mental autisme",
+                        "bagaimana cara pengobatan bagi orang yang memiliki gangguan mental autisme",
+                        "cara mengobati penderita gangguan autisme"],
+            "responses": ["Autisme tidak bisa disembuhkan. Meski demikian, ada beberapa pilihan terapi yang dapat dilakukan untuk mengembangkan kemampuan pasien, antara lain  dengan Terapi Perilaku dan Komunikasi dan Terapi untuk Keluarga"]
+        },
+
+        {"tag": "pengertianBipolar",
+            "patterns": ["Apa sih gangguan mental bipolar",
+                        "Penyebab gangguan mental bipolar",
+                        "apa itu bipolar",
+                        "bipolar",
+                        "bipolar adalah",
+                        "apa yang dimaksud bipolar",
+                        "pengertian bipolar",
+                        "penjabaran bipolar",
+                        "apa yang dimaksud bipolar",
+                        "pengertian gangguan bipolar adalah"],
+            "responses": ["Bipolar merupakan gangguan mental yang ditandai dengan perubahan yang drastis pada suasana hati. Penderita gangguan ini bisa merasa sangat bahagia kemudian berubah menjadi sangat sedih."]
+        },
+
+        {"tag": "ciriBipolar",
+            "patterns": ["ciri-ciri gangguan mental bipolar",
+                        "gejala orang penderita bipolar?",
+                        "ciri-ciri orang yang memiliki gangguan mental bipolar",
+                        "Jika orang menderita bipolar apa gejalanyaatau ciri-cirinya",
+                        "ciri-ciri bipolar",
+                        "bagaimana cara kita mengetahui gejala gangguan mental bipolar",
+                        "ciri ciri orang yang mengidap gangguan mental bipolar",
+                        "apa saja ciri - ciri orang yang menderita gangguan mental bipolar",
+                        "bagaimana kita mengetahui orang yang memiliki gangguan mental bipolar"],
+            "responses": ["Ciri-ciri dari orang penderita bipolah antara lain Sangat senang berlebihan atau bahagia, Percaya diri yang berlebihan, Keinginan untuk tidur menurun, Nafsu makan bertambah, Sangat sedih dan putus asa, Gelisah, Enggan untuk beraktivitas, Mudah lelah, Tidak nafsu makan"]
+        },
+
+        {"tag": "penyebabBipolar",
+            "patterns": ["apa penyebab bipolar",
+                        "Penyebab gangguan mental bipolar",
+                        "Apa yang menyebabkan penderita bipolar?",
+                        "penyebab bipolar",
+                        "apa yang menyebabkan timbulnya gangguan bipolar",
+                        "apa saja yang menyebabkan gangguan mental bipolar",
+                        "apa yang memicu bipolar",
+                        "bipolar disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena gangguan bipolar",
+                        "apa yang bisa menyebabkan orang bisa terkena gangguan mental bipolar",
+                        "kenapa orang bisa menderita gangguan mental bipolar ",
+                        "apa yang menyebabkan orang memiliki gangguan bipolar"],
+            "responses": ["Penyebab Gangguan Bipolar menurut beberapa pendapat ahli kondisi ini disebabkan oleh ketidakseimbangan neurotransmitter atau zat pengontrol fungsi otak. Ada juga yang berpendapat bahwa gangguan bipolar berkaitan dengan faktor keturunan. Beberapa faktor yang diduga bisa meningkatkan risiko seseorang terkena gangguan bipolar adalah Mengalami stres tingkat tinggi, Pengalaman traumatik, Kecanduan minuman beralkohol atau obat-obatan terlarang, dan Memiliki riwayat keluarga dekat (saudara kandung atau orangtua) yang mengidap gangguan bipolar."]
+        },
+
+        {"tag": "pengobatanBipolar",
+            "patterns": ["bagaimana cara pengobatan gangguan bipolar",
+                        "Cara mengobati penderita gangguan mental bipolar",
+                        "Bagaimana cara mengobati penderita gangguan mental bipolar",
+                        "cara pengobatan bagi penderita gangguan mental bipolar",
+                        "Bagaimana pengobatan bipolar",
+                        "Pengobatan seperti apa yang dapat dilakukan untuk gangguan mental bipolar",
+                        "Apa yang harus dilakukan untuk menangani gangguan mental bipolar",
+                        "apa yang perlu dilakukan untuk mengobati gangguan mental bipolar",
+                        "bagaimana cara pengobatan bagi orang yang memiliki gangguan mental bipolar",
+                        "cara mengobati penderita gangguan bipolar"],
+            "responses": ["Metode pengobatan yang dapat dilakukan berupa pemberian obat-obatan dan psikoterapi. Pengobatan gangguan bipolar ini bertujuan untuk mengurangi frekuensi munculnya gejala, membantu penderita kembali beraktivitas seperti biasanya, dan menurunkan risiko mengalami gangguan kesehatan lainnya. Namun,hingga saat ini, belum ada metode yang dapat mencegah gangguan bipolar. Tapi  untuk mengurangi kambuhnya gejala, penderita dianjurkan untuk rutin mengonsumsi obat-obatan sesuai resep dokter atau menjalani psikoterapi."]
+        },
+
+        {"tag": "pengertianInsecure",
+            "patterns": ["Apa sih insecure",
+                        "insecure adalah",
+                        "apa pengertian insecure",
+                        "apa itu insecure",
+                        "insecure",
+                        "insecure adalah",
+                        "apa yang dimaksud insecure",
+                        "pengertian insecure",
+                        "penjabaran insecure",
+                        "apa yang dimaksud insecure",
+                        "arti insecure"],
+            "responses": ["Insecure adalah perasaan cemas, ragu, atau kurang percaya diri sehingga membuat seseorang merasa tidak aman. Akibatnya, orang yang insecure bisa saja merasa cemburu, selalu menanyakan pendapat orang lain tentang dirinya, atau bahkan membandingkan dirinya dengan orang lain."]
+        },
+
+        {"tag": "menghilangkanInsecure",
+            "patterns": ["Cara untuk menghilangkan perasaan insecure pada diri",
+                        "agar tidak  insecure pada diri",
+                        " cara meminimalisir sifat insecure",
+                        "cara agar tidak insecure",
+                        "apa yang perlu dilakukan agar tidak insecure",
+                        "Tips terhidar dari insecure",
+                        "supaya tidak insecure",
+                        "bagaimana cara menghilangkan sifat insecure pada diri sendiri"],
+            "responses": ["Membangun self-esteem atau harga diri adalah salah satu cara untuk mengatasi perasaan insecure. Upaya yang bisa dilakukan antara lain, Lawan pikiran negatif, Terima hasil yang tidak sesuai keinginan, Ubah kegagalan menjadi motivasi, Bangun harga diri dan keyakinan diri"]
+        },
+
+        {"tag": "gejalaInsecure",
+            "patterns": ["ciri-ciri gangguan mental insecure",
+                        "gejala orang penderita insecure?",
+                        "ciri-ciri orang yang memiliki gangguan mental insecure",
+                        "Jika orang menderita insecure apa gejalanyaatau ciri-cirinya",
+                        "ciri-ciri insecure",
+                        "bagaimana cara kita mengetahui gejala gangguan mental insecure",
+                        "ciri ciri orang yang mengidap gangguan mental insecure",
+                        "apa saja ciri - ciri orang yang menderita gangguan mental insecure",
+                        "bagaimana kita mengetahui orang yang memiliki gangguan mental insecure"],
+            "responses": ["Beberapa gejala insecure antara lain adalah mencoba membuat orang lain merasa insecure, memamerkan diri secara terselubung, menceritakan pencapaian diri setiap saat, menyalahkan diri sendiri bila suatu hal tidak berjalan sempurna dan memiliki kepercayaan yang tipis terhadap orang lain."]
+        },
+
+        {"tag": "penyebabInsecure",
+            "patterns": ["apa penyebab insecure",
+                        "Penyebab gangguan mental insecure",
+                        "Apa yang menyebabkan penderita insecure?",
+                        "penyebab insecure",
+                        "apa yang menyebabkan timbulnya gangguan insecure",
+                        "apa saja yang menyebabkan gangguan mental insecure",
+                        "apa yang memicu insecure",
+                        "insecure disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena gangguan insecure",
+                        "apa yang bisa menyebabkan orang bisa terkena gangguan mental insecure",
+                        "kenapa orang bisa menderita gangguan mental insecure ",
+                        "apa yang menyebabkan orang memiliki gangguan insecure"],
+            "responses": ["Insecure dapat terjadi karena pernah mengalami kegagalan, mendapatkan penilaian kurang baik dari orang, atau akibat memiliki sifat perfeksionis."]
+        },
+
+        {"tag": "pengertianFobia",
+            "patterns": ["Apa sih fobia",
+                        "fobia adalah",
+                        "apa pengertian fobia",
+                        "apa itu fobia",
+                        "fobia",
+                        "fobia adalah",
+                        "apa yang dimaksud fobia",
+                        "pengertian fobia",
+                        "penjabaran fobia",
+                        "apa yang dimaksud fobia",
+                        "arti fobia",
+                        " fobia ialah.."],
+            "responses": ["Fobia adalah rasa takut berlebihan terhadap sesuatu yang biasanya tidak membahayakan. Ketakutan tersebut dapat timbul saat menghadapi situasi tertentu, berada suatu tempat, atau saat melihat hewan dan benda tertentu.Fobia termasuk ke dalam penyakit gangguan kecemasan. Penderita fobia biasanya akan berusaha untuk menghindari situasi dan objek yang dapat memicu ketakutan, atau berusaha menghadapinya sambil menahan rasa takut dan cemas."]
+        },
+
+        {"tag": "penyebabFobia",
+            "patterns": ["apa penyebab fobia",
+                        "Penyebab gangguan mental fobia",
+                        "Apa yang menyebabkan penderita fobia?",
+                        "penyebab fobia",
+                        "apa yang menyebabkan timbulnya gangguan fobia",
+                        "apa saja yang menyebabkan gangguan mental fobia",
+                        "apa yang memicu fobia",
+                        "fobia disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena gangguan fobia",
+                        "apa yang bisa menyebabkan orang bisa terkena gangguan mental fobia",
+                        "kenapa orang bisa menderita gangguan mental fobia ",
+                        "apa yang menyebabkan orang memiliki gangguan fobia"],
+            "responses": ["Fobia bisa disebabkan oleh beragam hal. Berdasarkan jenis ketakutan yang timbul, fobia dapat dibagi menjadi 2 jenis, yaitu: fobia spesifik (obia spesifik adalah fobia terhadap objek, hewan, situasi, atau aktivitas yang spesifik. Fobia ini biasanya muncul pada masa anak-anak atau remaja. Contoh fobia spesifik adalah fobia ruang tertutup (claustrophobia), fobia ketinggian, fobia pergi ke dokter gigi, fobia laba-laba (arachnophobia), atau fobia darah. ) dan fobia kompleks(Fobia kompleks biasanya berkembang pada masa dewasa. Fobia jenis ini sering dihubungkan dengan ketakutan dan kecemasan pada suatu situasi atau kondisi)"]
+        },
+
+        {"tag": "gejalaFobia",
+            "patterns": ["ciri-ciri gangguan mental fobia",
+                        "gejala orang penderita fobia?",
+                        "ciri-ciri orang yang memiliki gangguan mental fobia",
+                        "Jika orang menderita fobia apa gejalanyaatau ciri-cirinya",
+                        "ciri-ciri fobia",
+                        "bagaimana cara kita mengetahui gejala gangguan mental fobia",
+                        "ciri ciri orang yang mengidap gangguan mental fobia",
+                        "apa saja ciri - ciri orang yang menderita gangguan mental fobia",
+                        "bagaimana kita mengetahui orang yang memiliki gangguan mental fobia"],
+            "responses": ["fobia dapat menimbulkan gejala fisik dan mental akibat ketakutan berlebihan yang terjadi. selain rasa takut dan cemas yang berlebihan, fobia juga bisa disertai dengan serangan panik yang ditandai dengan jantung terasa berdebar-debar (palpitasi), sesak napas, kebingungan, pusing atau sakit kepala, mual, dada terasa nyeri, leher terasa tercekik, sulit berbicara dengan jelas, tubuh gemetar dan berkeringat, telinga berdenging, sensasi selalu ingin buang air kecil, mulut terasa kering, menangis,  dan takut ditinggal sendirian (terutama pada anak-anak)"]
+        },
+
+        {"tag": "pengobatanFobia",
+            "patterns": ["bagaimana cara pengobatan gangguan fobia",
+                        "Cara mengobati penderita gangguan mental fobia",
+                        "Bagaimana cara mengobati penderita gangguan mental fobia",
+                        "cara pengobatan bagi penderita gangguan mental fobia",
+                        "Bagaimana pengobatan fobia",
+                        "Pengobatan seperti apa yang dapat dilakukan untuk gangguan mental fobia",
+                        "Apa yang harus dilakukan untuk menangani gangguan mental fobia",
+                        "apa yang perlu dilakukan untuk mengobati gangguan mental fobia",
+                        "bagaimana cara pengobatan bagi orang yang memiliki gangguan mental fobia",
+                        "cara mengobati penderita gangguan fobia"],
+            "responses": ["Untuk mengatasi fobia, biasanya dokter akan menggunakan obat-obatan dan psikoterapi. Psikoterapi bisa berupa terapi eksposur untuk mengubah sudut pandang terhadap subjek atau situasi menakutkan dan cognitive behavioral therapy (CBT) yang menggabungkan terapi eksposur dengan terapi lain."]
+        },
+
+        {"tag": "mencegahFobia",
+            "patterns": ["Bagaimana mencegah agar terhindar dari fobia",
+                        "tips terhindar dari fobia",
+                        "terhindar dari fobia",
+                        "melawan fobia",
+                        "cara agar kita terhindar dari fobia"],
+            "responses": ["Ada berapa cara yang dapat dilakukan jika mengalami peristiwa traumatis atau ketika melihat atau merasakan hal yang membuat cemas, seperti: Berbagi cerita dengan keluarga, teman, atau psikolog, Mengubah pola pikir menjadi lebih positif dan melihat sesuatu yang ditakuti selama ini secara lebih objektif"]
+        },
+
+        {"tag": "artiFobiaSosial",
+            "patterns": ["Apa itu fobia sosial",
+                        "fobia sosial",
+                        "Apa sih fobia sosial",
+                        "fobia sosialadalah",
+                        "apa pengertian fobia sosial",
+                        "apa itu fobia sosial",
+                        "fobia sosial",
+                        "fobia sosial adalah",
+                        "apa yang dimaksud fobia sosial",
+                        "pengertian fobia sosial",
+                        "penjabara fobia sosial",
+                        "apa yang dimaksud fobia sosial",
+                        "arti fobia sosial",
+                        " fobia sosial ialah..",
+                        "pengertian dari fobia sosial"],
+            "responses": ["Social anxiety disorder atau fobia sosial adalah gangguan kesehatan mental yang ditandai dengan rasa takut akan diawasi, dihakimi, atau dipermalukan oleh orang lain. Fobia sosial juga dikenal dengan istilah gangguan kecemasan sosial."]
+        },
+
+        {"tag": "penyebabFobiaSosial",
+            "patterns": ["apa penyebab fobia sosial",
+                        "apa penyebab fobia sosial",
+                        "Penyebab gangguan mental fobia sosial",
+                        "Apa yang menyebabkan penderita fobia sosial?",
+                        "penyebab fobia sosial",
+                        "apa yang menyebabkan timbulnya gangguan fobia sosial",
+                        "apa saja yang menyebabkan gangguan mental fobia sosial",
+                        "apa yang memicu fobia sosial",
+                        "fobia  sosial disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena gangguan fobia sosial",
+                        "apa yang bisa menyebabkan orang bisa terkena gangguan mental fobia sosial",
+                        "kenapa orang bisa menderita gangguan mental fobia sosial ",
+                        "apa yang menyebabkan orang memiliki gangguan fobia sosial",
+                        "apa yang menyebabkan orang menjadi fobia sosial",
+                        "apa penyebab orang memiliki sifat fobia sosial"],
+            "responses": ["Fobia sosial atau social anxiety disorder dapat dipicu oleh situasi yang baru atau hal yang belum pernah dilakukan sebelumnya, misalnya berpidato atau menyampaikan presentasi di depan umum. Meskipun penyebab pastinya belum diketahui, kondisi ini diduga terkait dengan beberapa faktor berikut:1. Peristiwa masa laluFobia sosial bisa jadi muncul karena penderita pernah mengalami peristiwa memalukan atau tidak menyenangkan yang disaksikan oleh orang lain.2. Keturunan atau pola asuhFobia sosial cenderung diturunkan dari orang tua. Namun, belum bisa dipastikan apakah kondisi ini dipicu oleh faktor genetik atau akibat pola asuh yang salah, misalnya terlalu mengekang. Kemungkinan lain adalah anak meniru sikap orang tua yang kerap merasa cemas saat berhadapan dengan orang lain.3. Struktur otakRasa takut sangat dipengaruhi oleh bagian otak yang disebut amygdala. Amygdala yang terlalu aktif akan membuat seseorang mengalami rasa takut yang lebih kuat. Kondisi ini dapat meningkatkan risiko munculnya kecemasan secara berlebihan saat berinteraksi dengan orang lain."]
+        },
+
+        {"tag": "gejalaFobiaSosial",
+            "patterns": ["apa saja gejala yang muncul bagi penderita fobia sosial",
+                        "ciri-ciri gangguan mental fobia sosial",
+                        "gejala orang penderita fobia sosial?",
+                        "ciri-ciri orang yang memiliki gangguan mental fobia sosial",
+                        "Jika orang menderita fobia sosial apa gejalanyaatau ciri-cirinya",
+                        "ciri-ciri fobia sosial",
+                        "bagaimana cara kita mengetahui gejala gangguan mental fobia sosial",
+                        "ciri ciri orang yang mengidap gangguan mental fobia sosial",
+                        "apa saja ciri - ciri orang yang menderita gangguan mental fobia sosial",
+                        "bagaimana kita mengetahui orang yang memiliki gangguan mental fobia sosial",
+                        "apa gejala yang dirasakan bagi orang yang menderita fobia sosial"],
+            "responses": ["Rasa takut yang dirasakan penderita fobia sosial tidak hanya berlangsung sesaat, melainkan menetap, dan akan menimbulkan gejala fisik yang berupa:1. Wajah memerah2. Bicara terlalu pelan3. Postur tubuh yang kaku4. Otot menjadi tegang5. Keringat berlebih6. Mual7. Pusing8. Jantung berdebar9. Sesak napas"]
+        },
+
+        {"tag": "pengobatanFobiaSosial",
+            "patterns": ["bagaimana cara pengobatan gangguan fobia sosial",
+                        "Cara mengobati penderita gangguan mental fobia sosial",
+                        "Bagaimana cara mengobati penderita gangguan mental fobia sosial",
+                        "cara pengobatan bagi penderita gangguan mental fobia sosial",
+                        "Bagaimana pengobatan fobia sosial",
+                        "Pengobatan seperti apa yang dapat dilakukan untuk gangguan mental fobia sosial",
+                        "Apa yang harus dilakukan untuk menangani gangguan mental fobia sosial",
+                        "apa yang perlu dilakukan untuk mengobati gangguan mental fobia sosial",
+                        "bagaimana cara pengobatan bagi orang yang memiliki gangguan mental fobia sosial",
+                        "cara mengobati penderita gangguan fobia sosial"],
+            "responses": ["pengobatan fobia social antara lain pengobatan medis (penggunaan obat-obatan untuk mengatasi fobia sosial harus sesuai petunjuk dan di bawah pengawasan dokter, karena tidak bisa digunakan secara sembarangan. beberapa jenis obat yang umumnya digunakan adalah paroxetine atau sertraline.), psikoterapi(metode pengobatan lain yang dapat dilakukan untuk mengatasi fobia sosial adalah terapi perilaku dan cognitive behavioral therapy (cbt). terapis akan membantu penderita mengenali rasa takut sekaligus melatih untuk mengubah rasa takut dan cemas menjadi rasa yang lebih menyenangkan.) dan terapi relaksasi(dalam terapi ini, penderita akan diajarkan teknik pernapasan dan meditasi. dengan demikian, penderita juga bisa melakukan relaksasi sederhana di rumah sehingga merasa lebih santai dan seiring waktu fobia sosial bisa sembuh.)"]
+        },
+
+        {"tag": "pengertianKecemasan",
+            "patterns": ["Apa sih gangguan kecemasan",
+                        "gangguan kecemasan adalah",
+                        "apa pengertian gangguan kecemasan ",
+                        "apa itu gangguan kecemasan ",
+                        "gangguan kecemasan ",
+                        "gangguan kecemasan  adalah",
+                        "apa yang dimaksud gangguan kecemasan ",
+                        "pengertian gangguan kecemasan ",
+                        "penjabara gangguan kecemasan ",
+                        "apa yang dimaksud gangguan kecemasan ",
+                        "arti gangguan kecemasan ",
+                        " gangguan kecemasan  ialah.."],
+            "responses": ["Cemas anxiety adalah perasaan gugup atau gelisah. Biasanya orang akan mengalami rasa cemas ketika berhadapan dengan situasi tertentu, seperti sebelum wawancara kerja, sebelum ujian, saat harus mengambil keputusan penting, atau ketika menunggu hasil pemeriksaan dokter.."]
+        },
+
+        {"tag": "penyebabKecemasan",
+            "patterns": ["apa penyebab gangguan kecemasan",
+                        "Penyebab gangguan mental gangguan kecemasan",
+                        "Apa yang menyebabkan penderita gangguan kecemasan?",
+                        "penyebab fobia",
+                        "apa yang menyebabkan timbulnya gangguan kecemasan",
+                        "apa saja yang menyebabkan gangguan mental gangguan kecemasan",
+                        "apa yang memicu gangguan kecemasan",
+                        "gangguan kecemasan disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena gangguan kecemasan",
+                        "apa yang bisa menyebabkan orang bisa terkena gangguan kecemasan",
+                        "kenapa orang bisa menderita gangguan mental fobia",
+                        "apa yang menyebabkan orang memilikigangguan kecemasan"],
+            "responses": ["Fobia bisa disebabkan oleh beragam hal. Berdasarkan jenis ketakutan yang timbul, fobia dapat dibagi menjadi 2 jenis, yaitu: fobia spesifik (obia spesifik adalah fobia terhadap objek, hewan, situasi, atau aktivitas yang spesifik. Fobia ini biasanya muncul pada masa anak-anak atau remaja. Contoh fobia spesifik adalah fobia ruang tertutup (claustrophobia), fobia ketinggian, fobia pergi ke dokter gigi, fobia laba-laba (arachnophobia), atau fobia darah. ) dan fobia kompleks(Fobia kompleks biasanya berkembang pada masa dewasa. Fobia jenis ini sering dihubungkan dengan ketakutan dan kecemasan pada suatu situasi atau kondisi)"]
+        },
+
+        {"tag": "gejalaKecemasan",
+            "patterns": ["ciri-ciri gangguan kecemasan",
+                        "gejala orang penderitagangguan kecemasan?",
+                        "ciri-ciri orang yang memiliki gangguan kecemasan",
+                        "Jika orang menderita gangguan kecemasan apa gejalanyaatau ciri-cirinya",
+                        "ciri-ciri gangguan kecemasan",
+                        "bagaimana cara kita mengetahui gejalagangguan kecemasan",
+                        "ciri ciri orang yang mengidap gangguan kecemasan",
+                        "apa saja ciri - ciri orang yang menderita gangguan kecemasan",
+                        "bagaimana kita mengetahui orang yang memiliki gangguan kecemasan"],
+            "responses": ["Gangguan kecemasan merupakan salah satu gangguan mental yang serius. Kondisi ini dapat disebabkan oleh adanya masalah pada fungsi otak yang mengatur rasa takut dan emosi.Ada beberapa faktor yang dapat membuat seseorang lebih berisiko terkena gangguan kecemasan, yaitu:Pengalaman negatif yang menyebabkan stres atau trauma psikologis, Keturunan, Gangguan kepribadian, Efek samping obat atau zat tertentu, termasuk kafein dan narkoba dan Penyakit tertentu, seperti gangguan irama jantung dan penyakit tiroid"]
+        },
+
+        {"tag" : "mengatasiKecemasan",
+            "patterns": ["Bagaimana mengatasi gangguan kecemasan",
+                        "tips mengatasi gangguan kecemasan",
+                        "meminimalisir gangguan keceasan",
+                        "cara agar terbebas dari gangguan kecemasan",
+                        "supaya tidak mengalami gangguan kecemasan",
+                        "bagaimana cara menghilangkan gangguan kecemasan"],
+            "responses": ["Melakukan teknik relaksasi seperti teknik bernapas, yoga, dan meditasi, Melakukan aktivitas positif yang membuatmu bersemangat, pola hidup sehat seperti tidur teratur, berolahraga dan lainnya."]
+        },
+
+        {"tag": "pengertianAcdobsessiveCompulsiveDisorder ",
+            "patterns": ["ocd",
+                        "gangguan mental ocd",
+                        "Apa sih ocd",
+                        "ocd ialah",
+                        "apa pengertian ocd ",
+                        "apa itu ocd ",
+                        "ocd adalah",
+                        "apa yang dimaksud ocd",
+                        "pengertian ocd ",
+                        "penjabaran ocd ",
+                        "apa yang dimaksud ocd ",
+                        "arti gangguan kecemasan ",
+                        "apa pengertian gangguan mental ocd ",
+                        "Apa itu Obsessive Compulsive Disorder?",
+                        "ocd alias obsessive Compulsive Disorder adalah",
+                        "apa pengertian gangguan mental obsessive Compulsive Disorder"],
+            "responses": ["Obsessive-Compulsive Disorder (OCD) adalah sejenis gangguan mental. Orang dengan OCD memiliki pikiran dan dorongan yang tidak dapat dikendalikan dan berulang (obsesi), serta perilaku (paksaan) kompulsif. Contoh perilaku kompulsif adalah mencuci tangan 7 kali setelah menyentuh sesuatu yang mungkin kotor. Pikiran dan tindakan tersebut berada di luar kendali pengidap. Meski pengidap mungkin tidak ingin memikirkan atau melakukan hal tersebut, tetapi ia tidak berdaya untuk menghentikannya."]
+        },
+
+        {"tag" : "penyebabOcd",
+            "patterns": ["apa penyebab gangguan mental ocd",
+                        "apa penyebab ocd",
+                        "Penyebab gangguan mental ocd",
+                        "Apa yang menyebabkan penderita ocd?",
+                        "penyebab fobia",
+                        "apa yang menyebabkan timbulnya ocd",
+                        "apa saja yang menyebabkan gangguan mental ocd",
+                        "apa yang memicu ocd",
+                        "ocd disebabkan oleh",
+                        "hal apa saja yang membuat orang bisa terkena ocd",
+                        "apa yang bisa menyebabkan orang bisa terkena ocd",
+                        "kenapa orang bisa menderita ocd ",
+                        "apa yang menyebabkan orang memiliki ocd",
+                        "apa yang menyebabkan orang bisa mengidap gangguan mental ocd"],
+            "responses": [" Penyebab OCD antara lain adalah Memiliki riwayat OCD dalam keluarga, Menderita gangguan mental lain, Pernah mengalami kejadian yang menyebabkan trauma atau stres, Menderita infeksi bakteri Streptococcus ketika kanak-kanak (pediatric autoimmune neuropsychiatric disorders)"]
+        },
+
+        {"tag": "gejalaOcd",
+            "patterns": ["gejala yang muncul bagi penderita ocd",
+                        "ciri-ciri ocd",
+                        "gejala orang penderita ocd?",
+                        "ciri-ciri orang yang memiliki ocd",
+                        "Jika orang menderita ocd apa gejalanyaatau ciri-cirinya",
+                        "ciri-ciri ocd",
+                        "bagaimana cara kita mengetahui gejala ocd",
+                        "ciri ciri orang yang mengidap ocd",
+                        "apa saja ciri - ciri orang yang menderita ocd",
+                        "bagaimana kita mengetahui orang yang memiliki ocd",
+                        "apa saja gejala orang yang memiliki gangguan mental ocd"],
+            "responses": [" Gejala OCD antara lain adalah Pikiran Obsesif seperti cemas, stres, ketakutan, kekwatiran serta berperilaku kompulsif melakukan sesuatu atau kegiatan berulang-ulang"]
+        },
+
+        {"tag": "pengobatanOcd",
+            "patterns": ["bagaimana cara pengobatan gangguan ocd alias obsessive Compulsive Disorder",
+                        "Cara mengobati penderita gangguan mentalocd alias obsessive Compulsive Disorder",
+                        "Bagaimana cara mengobati penderita gangguan mental ocd alias obsessive Compulsive Disorder",
+                        "cara pengobatan bagi penderita gangguan mental ocd alias obsessive Compulsive Disorder",
+                        "Bagaimana pengobatan ocd alias obsessive Compulsive Disorder",
+                        "Pengobatan seperti apa yang dapat dilakukan untuk gangguan mental ocd alias obsessive Compulsive Disorder",
+                        "Apa yang harus dilakukan untuk menangani gangguan mental ocd alias obsessive Compulsive Disorder",
+                        "apa yang perlu dilakukan untuk mengobati gangguan mental ocd alias obsessive Compulsive Disorder",
+                        "bagaimana cara pengobatan bagi orang yang memiliki gangguan mental ocd alias obsessive Compulsive Disorder",
+                        "cara mengobati penderita gangguan ocd alias obsessive Compulsive Disorder"],
+            "responses": ["Pengobatan gangguan obsesif kompulsif bertujuan untuk mengendalikan gejala, agar pasien bisa beraktivitas dengan baik. Lama pengobatannya akan disesuaikan dengan tingkat keparahan gejala.Metode pengobatan OCD meliputi terapi perilaku kognitif dan pemberian obat antidepresan"]
+        },
+
+        {"tag": "mendiagnosaOcd",
+            "patterns": ["Bagaimana cara mendiagnosa orang yang memiliki gangguan mental ocd?",
+                        "Cara mengetahui orang yang mengidap penyakit gangguan mental ocd",
+                        "Mendiagnosa penderita ocd",
+                        "Cara mendiagnosa penderita gangguan ocd",
+                        "Bagaimana cara mengetahui orang yang menderita ocd?",
+                        "Cara untuk mengetahui seseorang menderita ocd"],
+            "responses": ["Langkah-langkah untuk membantu mendiagnosis OCD termasuk dalam pemeriksaan fisik. Hal ini dapat dilakukan untuk membantu menyingkirkan masalah lain yang dapat menyebabkan gejala dan untuk memeriksa komplikasi terkait. Selanjutnya, dilakukan tes laboratorium termasuk hitung darah lengkap (CBC), pemeriksaan fungsi tiroid, dan skrining untuk alkohol dan obat-obatan. Evaluasi psikologis, termasuk membahas pikiran, perasaan, gejala, dan pola perilaku. Kriteria diagnostik untuk OCD ada pada Diagnostik dan Statistik Gangguan Mental (DSM-5), yang diterbitkan oleh American Psychiatric Association."]
+        },
+
+        {"tag": "pengobatanOcd",
+            "patterns": ["Bagaimana pengobatan untuk orang yang menderita ocd?",
+                        "Bagaimana cara untuk mengobati penderita ocd?",
+                        "Cara mengobati ocd",
+                        "Apa ocd bisa disembuhkan dan bagaimana cara mengobatinya?",
+                        "Langkah apa yang harus dilakukan untuk mengobati ocd?",
+                        "Pengobatan gangguan mental ocd",
+                        "cara mengobati gangguan mental ocd alias obsessive Compulsive Disorder"],
+            "responses": ["Sayangnya, OCD tidak bisa disembuhkan. Namun, pengidap bisa meredakan gejala yang mengganggu aktivitas mereka dengan menjalani beberapa perawatan. Pengobatan OCD terdiri dari obat-obatan, psikoterapi, atau kombinasi keduanya. Meskipun sebagian besar pengidap OCD membaik setelah mendapatkan pengobatan, tetapi beberapa pengidap lainnya terus mengalami gejala. Kadang-kadang orang dengan OCD juga ditemukan memiliki gangguan mental lainnya, seperti kecemasan, depresi, dan gangguan dismorfik tubuh (gangguan saat seseorang memiliki anggapan keliru bahwa bagian dari tubuh mereka tidak normal). Penting untuk mempertimbangkan gangguan lain ini ketika menentukan pilihan perawatan.SRI dan SSRIs adalah dua jenis obat yang digunakan untuk membantu mengurangi gejala OCD. Selain itu, beberapa obat lain yang juga terbukti efektif mengatasi OCD pada orang dewasa dan anak-anak adalah obat antidepresan trisiklik, yang merupakan anggota dari kelas yang lebih tua dari \"tricyclic\" antidepresan, dan beberapa obat SSRI yang lebih baru. Jika gejala tidak membaik dengan jenis obat ini, penelitian menunjukkan beberapa pasien dapat merespons dengan baik terhadap obat antipsikotik.Selain obat-obatan, psikoterapi juga efektif untuk mengatasi OCD pada orang dewasa dan anak-anak. Penelitian menunjukkan bahwa jenis psikoterapi tertentu, termasuk terapi perilaku kognitif (CBT) dan terapi terkait lainnya (misalnya, pelatihan pembalikan kebiasaan) dapat sama efektifnya dengan obat bagi banyak individu. Penelitian juga menunjukkan bahwa tipe CBT yang disebut Exposure and Response Prevention (EX/RP) efektif dalam mengurangi perilaku kompulsif dalam OCD, bahkan pada orang yang tidak merespons dengan baik terhadap obat SRI. Bagi banyak pengidap, EX/RP adalah pilihan pengobatan tambahan ketika obat SRI atau SSRI tidak efektif mengatasi gejala OCD."]
+        },
+
+        {"tag": "mencegahOcd",
+            "patterns": ["Bagaimana cara mencegah agar kita terhindar dari gangguan mental ocd alias obsessive Compulsive Disorder?",
+                        "bagaimana sih cara mencegah ocd?",
+                        "Hal apa yang harus kita lakukan untuk mencegah gangguan ocd semakin parah",
+                        "Apa kita bisa mencegah ocd?",
+                        "Mencegah ocd",
+                        "Apa ocd bisa dicegah?",
+                        "gimana caranya mencegah ocd?",
+                        "cara agar terhindar dari penyakit mental ocd alias obsessive Compulsive Disorder"],
+            "responses": ["Tidak ada cara yang pasti untuk mencegah gangguan obsesif-kompulsif. Namun, mendapatkan pengobatan sesegera mungkin bisa membantu mencegah OCD memburuk dan mengganggu kegiatan dan rutinitas pengidap sehari-hari."]
+        },
+
+        {"tag":"pengertianInsomnia",
+            "patterns":["insomnia",
+                        "apa artinya insomnia",
+                        "insomnia itu apa?",
+                        "apa sih insomnia itu?",
+                        "insomnia adalah",
+                        "insomnia ialah",
+                        "penjelasan insomnia",
+                        "apa pengertian insomnia"],
+            "responses":["gangguan yang menyebabkan penderitanya sulit tidur atau tidak cukup tidur, meski terdapat cukup waktu untuk melakukannya. Gangguan ini bisa berdampak pada aktivitas penderita keesokan harinya."]
+        },
+
+        {"tag": "gejalaInsomnia",
+            "patterns": ["apa saja gejala yang muncul bagi penderita insomnia",
+                        "Gejala apa yang muncul jika seseorang menderita insomnia?",
+                        "Gejala insomnia",
+                        "Tanda - tanda insomnia muncul",
+                        "Bagaimana kita mengetahui gejala insomnia?",
+                        "Cara mengetahui gejala insomnia",
+                        "Apa aja sih gejala insomnia?",
+                        "Apa gejala yang terlihat pada orang pederita insomnia?",
+                        "seperti apa sih gejala insomnia"],
+            "responses": ["Insomnia ditandai dengan sulit tidur atau tidur yang tidak nyenyak. Keluhan tersebut dapat memicu gejala lain, seperti lelah dan mengantuk di siang hari, serta sulit fokus dalam beraktivitas"]
+        },
+
+        {"tag": "mencegahInsomnia",
+            "patterns": ["Bagaimana cara mencegah gangguan insomnia",
+                        "Cara untuk mencegah insomnia",
+                        "Upaya mencegah gangguan insomnia",
+                        "Apa yang bisa kita lakukan untuk mencegah insomnia?",
+                        "Mengatasi Insomnia",
+                        "Cara efektif untuk mencegah insomnia",
+                        "Mencegah gangguan insomnia",
+                        "Langkah untuk mencegah insomnia",
+                        "cara agar kita terhindar dari insomnia",
+                        "cara mengatasi gangguan insomnia"],
+            "responses": ["Menghindari banyak makan dan minum sebelum tidur, Membatasi konsumsi minuman beralkohol dan berkafein, Berusaha aktif di siang hari agar terhindar dari tidur siang"]
+        },
+
+        {"tag": "penyebabMimpiBuruk",
+            "patterns": ["faktor penyebab mimpi buruk terjadi",
+                        "Mengapa mimpi buruk bisa terjadi?",
+                        "Pemicu orang mengalami mimpi buruk",
+                        "Apa yang menyebabkan orang mengalami mimpi buruk",
+                        "Bagaimana bisa orang mengalami mimpi buruk",
+                        "Mimpi buruk terjadi karena apa sih?",
+                        "contoh pemicu orang bisa mengalami mimpi buruk",
+                        "penyebab terjadinya orang mengalami mimpi buruk",
+                        "apa yang menyebabkan kita bisa mimpi buruk"],
+            "responses": ["ada dugaan mimpi buruk terkait dengan faktor genetik, psikologis, kelainan fisik, gangguan dalam proses pertumbuhan dan perkembangan, serta gangguan pada otak."]
+        },
+
+        {"tag": "mencegahMimpiBuruk",
+            "patterns": ["bagimana cara mencegah terjadinya mimpi buruk",
+                        "Cara untuk mencegah mimpi buruk",
+                        "Bagaimana cara mengatasi mimpi buruk jika terjadi pada kita",
+                        "Langkah untuk mengatasi gangguan mimpi buruk",
+                        "Apa yang harus kita lakukan supaya tidak mengalami mimpi buruk?",
+                        "Cara kita bisa mengatasi mimpi buruk",
+                        "Apa mimpi buruk bisa di cegah?",
+                        "Mengatasi mimpi buruk",
+                        "Cara supaya gangguan mimpi buruk berkurang",
+                        "cara agar kita tidak mengalami terhindar mimpi buruk"],
+            "responses": ["Berolahraga secara rutin, minimal 30 menit per hari, Mengatur suasana yang nyaman di kamar tidur, Mengatur jam tidur dan bangun tidur yang sama setiap harinya, Menghindari konsumsi obat penenang, Membatasi konsumsi minumal beralkohol dan berkafein, Mendengarkan musik yang bisa menimbulkan suasana santai atau rileks, Menghindari penggunaan smartphone atau alat elektronik lain sebelum tidur"]
+        },
+
+        {"tag": "menghilangkanIntrovert",
+            "patterns": ["bagaimana kita menghilangkan sifat introvert",
+                        "apa sifat introvert bisa dihilangkan?",
+                        "bagaimana kita mengatasi kepribadian sifat introvert?",
+                        "Langkah apa yang harus dilakukan supaya sifat introvert bisa diatasi?",
+                        "Bagaimana cara kita mengatasi introvert dalam diri?",
+                        "Apa yang kita lakukan dengan sifat introvert dari dalam diri supaya tidak berlebihan?",
+                        "contoh kegiatan untuk mengurangi kepribadian introvert",
+                        "bagimana cara menghilangkan kepribadian Introvert",
+                        "cara agar kita mengatasi introvert pada diri kita sendiri"],
+            "responses": ["Menulis tentang hal-hal yang menarik, Mendalami bidang yang diminati, Melakukan interaksi sederhana, Belajar public speaking, Menikmati waktu sendiri"]
+        },
+
+        {"tag": "perbedaanAntisosialdanIntrovert",
+            "patterns": ["Apa antisosial sama artinya dengan introvert?",
+                        "Antisosial sama dengan introvert?",
+                        "Introvert apa sama dengan antisosial?",
+                        "Apa antisosial dan introvert berbeda?",
+                        "Apa antisosial bisa disamakan dengan sifat introvert?",
+                        "Introvert dan antisosial itu sama?",
+                        "mengapa antisosial tidak bisa disamakan dengan introvert?",
+                        "apa perbedaan antisosial dengan introvert",
+                        "perbedaan antisosial dengan introvert"],
+            "responses": ["Anti sosial dan introvert adalah dua hal yang berlawanan. Antisosial adalah kondisi atau keadaan seseorang yang tidak bisa memberikan penilaian atau membedakan baik buruk atas hal-hal yang dilakukannya sehingga penderita gangguan kepribadian antisosial ini memiliki kecenderungan untuk menyakiti orang lain, seperti tindakan tidak terpuji, tindakan kekerasan, penipuan, dan tindakan-tindakan lainnya yang hanya dilakukan untuk kesenangan pribadi saja. Sedangkan introvert adalah salah satu tipe kepribadian yang lebih fokus pada pikiran, suasana hati, dan perasaan secara internal. Namun juga banyak introvert yang bisa bersosialisasi dengan mudah, mereka hanya lebih nyaman jika sedang tidak bersosialisasi."]
+        },
+
+        {"tag": "tipsMenjalinIntrovert",
+            "patterns": ["tips untuk orang introvert menjalin hubungan ",
+                        "apa tips untuk seorang introvert menjalin pertemanan",
+                        "cara untuk mendapatkan teman bagi seorang introvert",
+                        "tips dalam berteman untuk orang introvert",
+                        "Cara percaya diri dalam berteman untuk orang introvert",
+                        "Tips Menjalin Hubungan Pertemanan Baru untuk orang Introvert",
+                        "bagaimana cara mencari teman bagi orang penderita introvert",
+                        "cara orang penderita introvert menjalin hubungan"],
+            "responses": ["Pahami alasan mencari teman, Tetap utamakan kualitas daripada kuantitas pertemanan, Mencari teman dengan minat yang sama, Jangan takut mencoba hal baru dan Tingkatkan rasa percaya diri"]
+        },
+
+        {"tag": "ciripanikAttack",
+            "patterns": ["ciri-ciri orang yang mengalami serangan panik",
+                        "tanda orang terkena panik attack",
+                        "bagaimana cara kita tahu tanda orang terkena serangan panik",
+                        "apa serangan panikmemiliki ciri khusus?",
+                        "tanda serangan panik muncul",
+                        "serangan panik ditandai dengan apa?",
+                        "ciri - ciri orang mudah terkena serangan panik",
+                        "ciri penderita panik attack",
+                        "tanda orang mengalami serangan panik",
+                        "cara mengetahui orang yang mengalami panik attack",
+                        "ciri - ciri orang mengalami serangan panik atau panic attack"],
+            "responses": ["Serangan panik ditandai dengan detak jantung yang bertambah cepat, napas pendek, pusing, tegang otot, atau gemetar. Kondisi ini bisa terjadi kapan pun, baik saat sedang beraktivitas maupun ketika beristirahat."]
+        },
+
+        {"tag": "penyebabPanicAttack",
+            "patterns": ["penyebab terjadinya serangan panik alias panic attack",
+                        "apa pemicu serangan panik muncul?",
+                        "apa yang menjadi penyebab serangan panik?",
+                        "bagaimana serangan panik bisa muncul?",
+                        "apa sih yang menjadi penyebab panik attack atau serangan panik?",
+                        "pemicu serangan panik atau panik attack",
+                        "penyebab serangan panik biasanya apa?",
+                        "apa saja yang dapat menyebabkan serangan panik alias panic attack",
+                        "bagaimana seseorang bisa mengalami panic attack"],
+            "responses": ["Serangan panik muncul saat tubuh mempersiapkan respons untuk melawan atau menghindar meski tidak ada situasi yang genting atau berbahaya. Seseorang bahkan dapat mengalami kondisi ini dalam situasi yang tidak terduga, misalnya ketika sedang menonton televisi atau tertidur."]
+        },
+
+        {"tag": "faktorPanicAttack",
+            "patterns": ["Faktor yang dapat meningkatkan resiko seseorang mengalami serangan panik alias panic attack",
+                        "apa saja faktor pemicu serangan panik muncul?",
+                        "biasanya serangan panik dipicu faktor apa?",
+                        "sebutkan faktor pemicu serangan panik atau panik attack",
+                        "faktor apa yang menyebabkan panik attack?",
+                        "faktor penyebab panik attack",
+                        "panik attack bisa terjadi karena apa?",
+                        "keadaan seperti apa yang bisa menyebabkan serangan panik muncul",
+                        "faktor-faktor pemicu serangan panik atau panik attack",
+                        "apa saja faktor yang dapat meningkatkan panik attack"],
+            "responses": ["Stres berkelanjutan, yang menyebabkan tubuh memproduksi lebih banyak zat kimia pemicu stres, seperti adrenalin. Trauma atau pengalaman yang membuat diri sangat tertekan. Pengendalian amarah yang buruk sehingga lebih rentan mengalami stres. Masalah kehidupan, misalnya perceraian atau masalah keuangan dan Aktivitas fisik yang terlalu berat"]
+        },
+
+        {"tag": "mengendalikanPanicAttack",
+            "patterns": ["Cara mengendalikan serangan panik alias panic attack",
+                        "tips mengontrol serangan panik atau panik attack",
+                        "tips yang bisa dilakukan jika serangan panik kambuh",
+                        "bagaimana kita bisa mengendalika serangan panik jika muncul secara tiba-tiba",
+                        "apa yang bisa kita lakukan jika serangan panik atau panik attack muncul?",
+                        "mengendalikan serangan panik atau panik attack",
+                        "cara mengatasi panik attack secara mandiri",
+                        "tips untuk mengendalikan panik attack",
+                        "bagaimana cara mengatasi panik attack",
+                        "bagaimana cara kita menghadapi orang yang mengalami serangan panik alias panic attack"],
+            "responses": ["Pada saat mengalami serangan panik, penderita dapat melakukan penanganan mandiri untuk meredakan gejala yang dialami, yaitu dengan: Mengatur pernapasan dengan menghirup dan mengembuskan napas secara perlahan. Menghentakkan kaki untuk membantu mengatur proses bernapas. Memfokuskan panca indra, misalnya dengan makan permen atau memeluk bantal. Melakukan teknik grounding, yaitu dengan fokus menghindari ingatan atau pikiran negatif, misalnya dengan berhitung, memperhatikan lingkungan sekitar, atau memikirkan hal yang menenangkan"]
+        },
+
+        {"tag": "mencegahPanicAttack",
+            "patterns": ["cara mencegah gangguan serangan panik", 
+                        "cara apa yang bisa dilakukan untuk mencegah serangan panik?",
+                        "tips untuk mencegah serangan panik atau panik attack",
+                        "tips mengontrol diri jika serangan panik muncul",
+                        "mencegah serangan panik atau panik attack",
+                        "cara supaya kita bisa mencegah serangan panik atau pani attack",
+                        "apa panik attack bisa dicegah?",
+                        "bagaimana cara mencegah serangan panik?",
+                        "bagaimana mencegah agar kita tidak mengalami panik attack"],
+            "responses": ["Ada beberapa cara pencegahan serangan panik yang dapat dilakukan secara mandiri, yaitu: Berolahraga secara rutin, terutama yoga atau pilates. Melakukan teknik relaksasi dan pernapasan. Membatasi makanan dan minuman yang mengandung gula tinggi. Membatasi minuman yang mengandung kafein dan alkohol. Tidak merokok dan Tidur dan beristirahat yang cukup"]
+        },
+
+        {"tag": "bahayaMoodSwing",
+            "patterns": ["apa bahayanya mood swing bagi orang sekitar",
+                        "apa gangguan mood atau mood swing berbahaya?",
+                        "mood swing berbahaya atau tidak?",
+                        "apa mood swing itu normal?",
+                        "orang yang terkena mood swing bisa parah atau tidak?",
+                        "apa mood swing itu wajar?",
+                        "bahaya mood swing",
+                        "Apa mood swing berbahaya",
+                        "jika teman atau sodara kita mengalami mood swing apakah bisa membahayakan orang sekitar"],
+            "responses": ["Selama perubahan emosi tidak berdampak kepada kehidupan sehari-hari, maka hal ini masih dapat dianggap normal. Namun apabila perubahan suasana hati terjadi secara drastis, sering, berlarut-larut, dan hingga menganggu aktivitas, maka hal ini perlu diwaspadai."]
+        },
+
+        {"tag": "penyebabMoodSwing",
+            "patterns": ["penyebab seseorang mengalami mood swing",
+                        "penyebab mood swing",
+                        "mood swing bisa disebabkan karena apa?",
+                        "apa yang menjadi pemicu mood swing",
+                        "bagaimana seseorang bisa mengalami mood swing?",
+                        "penyebab mood swing muncul tiba-tiba",
+                        "pemicu mood swing",
+                        "mengapa mood swing bisa muncul?",
+                        "kenapa orang bisa mengalami mood swing",
+                        "penyebab mood swing"],
+            "responses": ["Ada berbagai penyebab seseorang mengalami mood swing, di antaranya: Kondisi hormon Remaja, wanita hamil, dan wanita menopause adalah kelompok yang memiliki kemungkinan besar mengalami mood swing terkait perubahan hormon. Ketidakseimbangan kimia otak Mood swing bisa disebabkan oleh ketidakseimbangan zat kimia otak yang mengatur suasana hati, Beberapa contoh zat kimia otak ini adalah serotonin dan dopamin. Penyakit yang diderita juga dapat menjadi faktor yang mendasari kemunculan mood swing. Seperti kerusakan paru-paru, ginjal, atau jantung, penyakit tiroid, dan kelainan pada otak. Ada beberapa gangguan mental yang sering kali dikaitkan dengan keluhan mood swing, seperti depresi, gangguan bipolar, gangguan kepribadian ambang, skizofrenia, dan ADHD (Attention deficit hyperactivity disorder)"]
+        },
+
+        {"tag": "mengatasiMoodSwing",
+            "patterns": ["bagaimana cara mengatasi mood swing",
+                        "tips mengatasi mood swing",
+                        "apa langkah yang bisa dilakukan untuk mengatasi mood swing?",
+                        "apa sih tips supaya mood swing bisa diatasi?",
+                        "cara mencegah mood swing yang muncul",
+                        "langkah untuk mencegah mood swing",
+                        "bagaimana tips mengatasi mood swing dalam diri kita?",
+                        "cara mencegah mood swing",
+                        "cara mengatasi saat sedang terjadi mood swing "],
+            "responses": ["Langkah yang dapat dilakukan untuk mengatasi dan mencegah mood swing yaitu bisa dengan menjalani pola gaya hidup sehat, membuat mood diary untuk lebih mudah mengenali faktor yang memicu mood swing tersebut dan berkonsultasilah pada psikiater atau psikolog apabila gangguan mood swing sering terjadi atau dianggap parah."]
+        },
+
+        {"tag": "moodSwingGangguanMental",
+            "patterns": ["apakah mood swing juga termasuk gangguan mental?",
+                        "mood swing termasuk gangguan mental atau bukan?",
+                        "apa mood swing bisa dikategorikan gangguan mental?",
+                        "jika kita mood mengalami mood swing apa termasuk gangguan mental?",
+                        "mood swing itu gangguan mental?",
+                        "apa mood swing perlu diwaspadai?",
+                        "apa mood swing termasuk ciri - ciri gangguan mental?",
+                        "apa mood swing normal?"],
+            "responses": ["Perubahan suasana hati (mood swing) merupakan hal yang normal jika terjadi sesekali. Namun bila mood swing sering terjadi dan sampai menganggu kehidupan pribadi, ada kemungkinan kondisi ini terkait dengan gangguan kesehatan mental, yaitu penyakit bipolar."]
+        },
+
+        {"tag": "moodSwingGangguanBipolar",
+            "patterns": ["Apakah Mood swing termasuk gangguan bipolar?",
+                        "perbedaan mood swing dan bipolar",
+                        "apa mood swing sama dengan bipolar?",
+                        "apakah mood swing bisa disamakan dengan bipolar?",
+                        "mood swing dan bipolar itu sama atau beda?",
+                        "bipolar dan mood swing apa bisa disamakan?",
+                        "apa bedanya mood swing dengan bipolar?"],
+            "responses": ["Berbeda dengan bipolar, perubahan perubahan suasana hati pada pengidap moody tidak akan mengganggu kehidupan mereka. Pengidap gangguan bipolar lebih lama mengalami perubahan mood. Pada pengidap perubahan suasana hati, mereka bisa saja bangun tidur merasa senang, dan merasa depresi saat di kantor."]
+        },
+
+        {"tag": "pengertianPtsd",
+            "patterns": ["ptsd alias post traumatic stress disorder",
+                        "pengertian gangguan ptsd alias post traumatic stress disorder",
+                        "ptsd alias post traumatic stress disorder adalah",
+                        "gangguan ptsd alias post traumatic stress disorder itu apa",
+                        "penjelasan mengenai ptsd alias post traumatic stress disorder",
+                        "apa itu ptsd?",
+                        "ptsd alias post traumatic stress disorder",
+                        "gangguan mental ptsd alias post-traumatic stress disorder",
+                        "Apa itu gangguan mental ptsd alias post traumatic stress disorder"],
+            "responses": ["PTSD (post-traumatic stress disorder) atau gangguan stres pascatrauma adalah gangguan mental yang muncul setelah seseorang mengalami atau menyaksikan peristiwa yang bersifat traumatis atau sangat tidak menyenangkan. Beberapa peristiwa traumatis yang dapat memicu PTSD adalah perang, kecelakaan, bencana alam, dan pelecehan seksual."]
+        },
+
+        {"tag": "penyebabPtsd",
+            "patterns": ["Penyebab ptsd bisa muncul",
+                        "pemicu gangguan ptsd",
+                        "ptsd bisa muncul karena apa?",
+                        "penyebab seseorang mengalami gangguan ptsd alias post traumatic stress disorder",
+                        "apa sih pemicu ptsd alias post traumatic stress disorder",
+                        "bagaimana ptsd bisa muncul?",
+                        "hal apa yang dapa menyebabkan gangguan ptsd muncul tiba - tiba?",
+                        "hal yang menyebabkan gangguan mental ptsd alias post traumatic stress disorder"],
+            "responses": ["PTSD bisa muncul setelah mengalami atau menyaksikan peristiwa yang menakutkan atau mengancam nyawa. Namun, ada dugaan bahwa penyebabnya adalah kombinasi dari sejumlah kondisi berikut: Pengalaman yang tidak menyenangkan, Riwayat gangguan mental pada keluarga, Kepribadian bawaan yang temperamen"]
+        },
+
+        {"tag": "pengalamanPenderitaPtsd",
+            "patterns": ["Contoh pengalaman tidak menyenangkan yang berakibat orang mengalami gejala ptsd",
+                        "contoh pengalaman dari penderita gangguan mental ptsd",
+                        "peristiwa yang memicu ptsd muncul",
+                        "pengalaman apa yang bisa memicu gangguan ptsd",
+                        "contoh peristiwa yang menyebabkan orang menderita ptsd",
+                        "pengalaman penderita ptsd",
+                        "pengalaman buruk yang memicu gangguan ptsd",
+                        "pengalaman orang yang mengalami gangguan pstd"],
+            "responses": ["Peristiwa yang diketahui paling sering memicu PTSD meliputi: Kecelakaan, Bencana alam, Perundungan (bullying), Kekerasan fisik, Pelecehan seksual, Prosedur medis tertentu seperti operasi, Penyakit yang mengancam nyawa misalnya serangan jantung"]
+        },
+
+        {"tag": "mengatasiTrauma",
+            "patterns": ["Cara untuk mengatasi rasa trauma",
+                        "tips mengatasi trauma",
+                        "bagaimana cara mengatasi rasa trauma?",
+                        "cara untuk menghilangkan efek trauma",
+                        "apa tips supaya rasa trauma bisa hilang?",
+                        "mengatasi rasa trauma",
+                        "apa tips yang bisa dilakukan dalam menghilangkan rasa trauma",
+                        "apa yang harus dilakukan untuk menghilangkan rasa trauma "],
+            "responses": ["Cara untuk mengatasi trauma yang bisa dilakukan yaitu tenangkan diri dengan menarik napas, tidak menyalahkan diri sendiri, selalu berpikiran positif dan fokus pada hal penting, love yourself, cari bantuan untuk pemulihan seperti memiliki teman curhat atau bisa juga berkunjung ke psikolog atau psikiater untuk berbagi cerita. "]
+        },
+
+        {"tag": "gangguanPsikosomatis",
+            "patterns": ["psikosomatis",
+                        "psikosomatis adalah",
+                        "gangguan psikosomatis ialah",
+                        "pengertian gangguan mental psikosomatis",
+                        "Apa sih artinya gangguan mental psikosomatis"],
+            "responses": ["Psikosomatis berasal dari kata psyche  yang berarti fisik dan soma  yang berarti tubuh. Psikosomatis atau psikosomatik adalah istilah yang mengacu pada keluhan gejala fisik yang muncul akibat pikiran dan emosi yang dirasakan seseorang."]
+        },
+
+        {"tag": "contohgangguanPsikosomatis",
+            "patterns": ["contoh gangguan mental psikosomatis alias psikosomatik",
+                        "seperti apa gangguan psikosomatik",
+                        "kaya gimana gangguan psikosomatis",
+                        "contoh orang yang mengalami gangguan mental psikosomatis alias psikosomatik"],
+            "responses": ["Psikosomatis merupakan hubungan antara pemikiran atau psikis yang bisa mempengaruhi kondisi tubuh atau sebaliknya, sebagai contoh ketika kita mengalami sakit lambung atau maag jika sudah ditelaah atau sudah melakukan pemeriksaan tapi ternyata hasilnya normal disitulah adanya interelasi antara psikis dengan soma"]
+        },
+
+        {"tag": "mencegahGangguanPsikosomatis",
+            "patterns": ["Bagaimana Cara untuk Mengatasi psikosomatis?",
+                        "mencegah gangguan psikosomatik",
+                        "cara mencegah gangguan mental psikosomatis alias psikosomatik"],
+            "responses": ["Cara Mengatasi Gangguan PsikosomatisYoga. Yoga berupa latihan relaksasi dan meditasi bisa mengatasi gangguan psikosomatis. ... Pengobatan. Biasanya obat tertentu diresepkan oleh dokter untuk mengatasi gejala fisik. ... Terapi puasa. ... Hipnotis. ... Terapi perilaku kognitif. ... Teknik relaksasi. ... Pijat. ... Terapi seni."]
+        },
+
+        {"tag": "bahayaGangguanPsikosomatis",
+            "patterns": ["Apakah penyakit psikosomatis berbahaya bagi orang sekitar",
+                        "gangguan mental psikosomatis dapat membahayakan"],
+            "responses": ["Gangguan psikosomatis ini secara langsung tidak membahayakan orang lain, namun dapat merugikan baik penderita maupun orang terdekat dalam hal pengorbanan dari segi tenaga, biaya, dan waktu untuk memeriksakan penderita ke dokter."]
+        },
+
+        {"tag": "psikosomatissembuh",
+            "patterns": ["Apakah psikosomatis bisa sembuh sendiri",
+                        "orang yang mengalami gangguan mental psikosomatik dapat disembuhkan",
+                        "gangguan mental psikosomatis dapat disembuhkan"],
+            "responses": ["Apakah penderita psikosomatis dapat disembuhkan? dr.Andri, SpKJ,FAPM dokter spesialis kedokteran jiwa yang merupakan bagian dari American Psychosomatic Society mengatakan bahwa gangguan kecemasan dan depresi yang mayoritas mendasari kasus-kasus psikosomatis ini sering kali tidak bisa sembuh sempurna"]
+        },
+
+        {"tag": "ciriGangguanPsikosomatis",
+            "patterns": ["Apa ciri-ciri penderita gangguan mental psikosomatis",
+                        "kaya gimana orang yang menderita psikosomatis",
+                        "seperti apa ciri ciri seseorang yang menderita gangguan mental psikosomatis",
+                        "cara mengetahui orang yang mengalami gangguan mental psikosomatis alias psikosomatik"],
+            "responses": ["Beberapa gejala sering dirasakan pengidap psikosomatis antara lain:Jantung berdebar-debar.Sesak napas.Lemas atau tidak dapat menggerakkan anggota tubuh sama sekali.Nyeri ulu hati.Tidak nafsu makan.Susah tidur.Nyeri kepala.Nyeri seluruh tubuh."]
+        },
+
+        {"tag": "anxietyDanDepresi",
+            "patterns": ["Apakah anxiety sama dengan depresi",
+                        "perbedaan anxiety dan depresi",
+                        "apa bedanya gangguan mental anxiety dan gangguan mental depresi",
+                        "cara membedakan gangguan anxiety dan depresi"],
+            "responses": ["Menurut sang psikiater, perbedaan terbesar adalah kecemasan ditandai dengan ketakutan dan kesedihan yang konstan, sementara depresi biasanya merupakan gangguan di mana orang tersebut merasa tertekan dan kehilangan motivasi atau minat untuk melakukan pekerjaan-pekerjaan yang sebelumnya menyenangkan."]
+        },
+
+        {"tag": "gangguanAnxiety",
+            "patterns": ["Apa itu anxiety?",
+                        "anxiety",
+                        "anxiety adalah",
+                        "anxiety ialah",
+                        "gangguan mental anxiety",
+                        "arti gangguan mental anxiety"],
+            "responses": ["Anxiety disorder adalah gangguan kecemasan yang ditandai dengan perasaan cemas menetap, bahkan memburuk hingga akhirnya mengganggu aktivitas sehari-hari"]
+        },
+
+        {"tag": "gejalaAnxiety",
+            "patterns": ["Cara mengenali gejala anxiety",
+                        "apa sih gejala gangguan mental anxiety",
+                        "gelaja orang yang menderita gangguan anxiety",
+                        "faktor munculnya gangguan anxiety"],
+            "responses": ["Munculnya rasa cemas karena harus berhadapan dengan situasi atau keadaan yang dianggap dapat menimbulkan stres adalah hal yang normal. Orang yang cemas biasanya akan merasakan gejala-gejala berikut ini:\n1. Gugup, gelisah, dan tegang\n2. Detak jantung cepat\n3. Napas cepat\n4. Gemetaran\n5. Sulit atau bahkan tidak bisa tidur\n6. Banyak berkeringat\n7. Tubuh terasa lemas\n8. Sulit konsentrasi"]
+        },
+
+        {"tag": "jenisAnxiety",
+            "patterns": ["Beberapa jenis gangguan mental anxiety yang perlu diketahui",
+                        "apa saja gangguan mental anxiety",
+                        "ada berapa jenis gangguan anxiety",
+                        "jenis gangguan mental anxiety"],
+            "responses": ["Gangguan kecemasan umum (generalized anxiety disorder), Fobia, Gangguan kecemasan social, PTSD (post-traumatic stres disorder), Gangguan panik dan Gangguan obsesif kompulsif (OCD)"]
+        },
+
+        {"tag": "MengatasiGanguanAnxiety",
+            "patterns": ["Cara mengatasi gangguan mental anxiety",
+                        "bagaimana mencegah gangguan anxiety",
+                        "yang harus dilakukan untuk menghadapi gangguan mental anxiety",
+                        "apa yang harus dilakukan jika seseorang mengalami gangguan mental anxiety"],
+            "responses": ["Untuk meredakan atau mencegah munculnya perasaan cemas, Anda dapat melakukan beberapa cara berikut ini:1. Mencukupi waktu tidur dan istirahat2. Membatasi konsumsi kafein dan minuman beralkohol3. Mengurangi stres dengan mencoba teknik relaksasi, misalnya meditasi dan yoga4. Melakukan aktivitas fisik atau berolahraga secara teratur5. Mencoba bertukar pikiran atau curhat dengan teman"]
+        },
+
+        {"tag": "JenisGangguanMakan",
+            "patterns": ["Beberapa jenis gangguan makan yang sering terjadi",
+                        "ada berapa jenis gangguan makan",
+                        "jenis-jenis gangguan makan",
+                        "apa saja yang termasuk gangguan makan"],
+            "responses": ["Gangguan makan yang paling sering terjadi adalah anoreksia nervosa, bulimia nervosa, dan gangguan makan berlebihan atau binge eating disorder. Gangguan makan dapat terjadi pada semua kelompok usia, tetapi lebih sering dialami oleh remaja usia 13-17 tahun."]
+        },
+
+        {"tag": "mencegahMakanAnak",
+            "patterns": ["Bagaimana cara mencegah gangguan makan pada anak?",
+                        "cara mengurangi gangguan makan pada anak-anak",
+                        "cara agar anak dapat terhindar dari gangguan makan"],
+            "responses": ["cara-cara yang dapat dilakukan untuk mengurangi risiko terjadinya gangguan makan pada anak antara lain:Membiasakan makan bersama keluarga dan membicarakan pentingnya pola makan yang seimbang dengan porsi yang sewajarnya.Meluangkan waktu untuk bicara pada anak bahwa gangguan makan sangat berbahaya dan bukanlah gaya hidup yang sehatMenumbuhkan rasa percaya diri pada anak dengan memuji penampilannya dan tidak mengejek tampilan fisiknya meski hanya bercanda"]
+        },
+
+        {"tag": "penyebabGangguanMakan",
+            "patterns": ["Penyebab gangguan makan",
+                        "apa faktor yang dapat memicu gangguan makan",
+                        "yang dapat menyebabkan seseorang mengalami gangguan makan",
+                        "kenapa seseorang bisa mengalami gangguan makan"],
+            "responses": ["Gangguan makan dapat terjadi akibat kombinasi dari beberapa faktor, yaitu:\n1. Genetik Pada beberapa kasus, gangguan makan terjadi pada orang dengan gen tertentu yang memicu gangguan makan.\n2. KeturunanGangguan makan juga umumnya dialami oleh orang yang memiliki orang tua atau saudara kandung dengan riwayat gangguan yang sama.\n3. BiologisPerubahan zat kimia dalam otak dapat berperan dalam menimbulkan gangguan makan.\n4. PsikologisGangguan makan sering terjadi pada penderita gangguan kecemasan, depresi, dan obsessive compulsive disorder."]
+        },
+
+        {"tag": "kondisiMeningkatnyaGangguanMakan",
+            "patterns": ["apa saja kondisi yang dapat meningkatkan risiko seseorang mengalami gangguan makan",
+                        "apa saja yang dapat meningkatkan gangguan makan",
+                        "faktor yang dapat meningkatkan gangguan makan",
+                        "faktor yang mempengaruhi gangguan makan",
+                        "kenapa gangguan makan bisa meningkat"],
+            "responses": ["1. Usia remaja Remaja, terutama perempuan, rentan mengalami gangguan makan karena cenderung lebih memerhatikan citra atau penampilan diri.\n2. Diet yang berlebihanRasa lapar akibat diet yang terlalu ketat dapat memengaruhi otak sehingga justru menimbulkan dorongan untuk makan secara berlebihan.\n3. StresBerbagai masalah yang menyebabkan stres, baik dalam pekerjaan, keluarga, maupun hubungan sosial, dapat meningkatkan risiko gangguan makan."]
+        },
+
+        {"tag": "gangguanBumiliaNervosa",
+            "patterns": ["Apa itu bumilia nervosa",
+                        "bumilia nervosa",
+                        "gangguan bumilia nervosa ialah",
+                        "gangguan mental bumilia nervosa",
+                        "bumilia nervosa adalah"],
+            "responses": ["Bumilia nervosa adalah gangguan makan yang membuat penderitanya makan secara berlebihan, kemudian ingin segera membuang makanan yang dikonsumsinya dengan cara yang tidak sehat."]
+        },
+
+        {"tag": "penderitaGangguanBumiliaNervosa",
+            "patterns": ["Keluhan yang dirasakan penderita bumilia nervosa",
+                        "apa yang dirasakan oleh seseorang yang menderita gangguan bumilia nervosa",
+                        "perasaan orang yang mengalami gangguan mental bumilia nervosa"],
+            "responses": ["1. Sakit tenggorokan\n2. Pembengkakan pada wajah atau kelenjar di rahang\n3. Gangguan siklus menstruasi\n4. Gigi sensitif dan rusak5. Gusi berdarah"]
+        },
+
+        {"tag": "gangguanBingeEatingDisorder",
+            "patterns": ["bed",
+                        "bed yaitu",
+                        "gangguan bed adalah",
+                        "gangguan binge eating disorder adalah",
+                        "Apa sih artinya binge eating disorder ",
+                        "binge eating disorder adalah"],
+            "responses": ["Gangguan makan berlebihan atau binge eating disorder ditandai dengan perilaku makan yang cepat dan dalam porsi sangat banyak, meski tidak lapar atau bahkan sudah sangat kenyang. Akibatnya, penderita gangguan ini memiliki berat badan berlebih atau obesitas."]
+        },
+
+        {"tag": "gejalaGangguanBed",
+            "patterns": ["apa saja gejala gangguan bed atau binge eating disorder",
+                        "gejala gangguan bed",
+                        "faktor gangguan binge eating disorder",
+                        "gejala yang muncul ketika mengalami gangguan bed alias binge eating disorder",
+                        "cara agar mengetahui penderita gangguan bed alias binge eating disorder"],
+            "responses": ["Gejala binge eating disorder antara lain:\n1. Mengonsumi makanan dalam jumlah banyak\n2. Makan dengan sangat cepat\n3. Tetap makan saat perut sudah kenyang\n4. Bersembunyi saat makan karena malu bila terlihat orang"]
+        },
+
+        {"tag": "mencegahGangguanBed",
+            "patterns": ["Cara mencegah gangguan makan ",
+                        "cara agar tidak terkena gangguan binge eating disorder",
+                        "bagaimana agar kita tidak mengalami gangguan bed alias binge eating disorder",
+                        "bagaimana cara agar terhindar dari gangguan bed alias binge eating disorder"],
+            "responses": ["Tidak ada cara yang pasti untuk mencegah gangguan makan. Namun, ada beberapa upaya yang dapat membantu menumbuhkan perilaku makan yang sehat pada remaja, yaitu: \n1. Menerapkan pola pikir yang sehat dan seimbang terhadap makan, berat badan, dan bentuk tubuh \n2. Menghilangkan pemikiran seperti berat badan, bentuk tubuh, menentukan kesuksesan dan kebahagiaan. \n3. Menanamkan pemahaman bahwa diet ketat bisa menyebabkan gangguan, baik fisik maupun mental. \n4. Mengonsumsi makanan bergizi seimbang\n5. Berolahraga secara rutin"]
+        },
+
+        {"tag": "jenisGangguanMentalRemaja",
+            "patterns": ["Apa saja penyakit mental pada remaja?",
+                        "apa saja gangguan mental pada usia remaja",
+                        "jenis penyakit mental yang sering terjadi saat remaja",
+                        "gangguan mental yang sering dialami oleh remaja"],
+            "responses": ["Pada remaja, masalah kesehatan mental yang umum dialami adalah PTSD (post traumatic stress disorder), ADHD (Attention deficit hyperactivity disorder), gangguan kecemasan umum, gangguan makan, skizofrenia, gangguan bipolar, dan depresi. Gangguan kesehatan mental pada remaja tak jarang memicu tindakan bunuh diri"]
+        },
+
+        {"tag": "quarterLifeCrisis",
+            "patterns": ["Apa itu quarter life crisis?",
+                        "quarter life crisis",
+                        "pengertian quarter life crisis",
+                        "quarter life crisis adalah"],
+            "responses": ["Quarter life crisis atau krisis seperempat abad adalah periode saat seseorang berusia 18-30 tahun merasa tidak memiliki arah, khawatir, bingung, dan galau akan ketidakpastian kehidupannya di masa mendatang. Umumnya, kekhawatiran ini meliputi masalah relasi, percintaan, karier, dan kehidupan sosial."]
+        },
+
+        {"tag": "penyebabQuarterLifeCrisis",
+            "patterns": ["Penyebab seseorang mengalami quarter life crisis",
+                        "apa yang menyebabkan quarter life crisis",
+                        "faktor orang dapat mengalami quarter life crisis",
+                        "kenapa bisa terjadi quarter life crisis"],
+            "responses": ["Ada beberapa kondisi yang sering memicu terjadinya quarter life crisis, di antaranya:1. Mengalami masalah pekerjaan atau finansial2. Merencanakan karier dan masa depan3. Menjalani hidup mandiri untuk pertama kalinya4. Menjalani hubungan romantis yang serius untuk pertama kalinya5. Mengalami putus cinta setelah menjalani hubungan yang serius sekian lama6. Melihat teman sebaya sudah mencapai impiannya lebih dulu7. Membuat keputusan pribadi atau profesional yang akan bertahan dalam jangka waktu yang lama"]
+        },
+
+        {"tag": "tandaQuarterLifeCriris",
+            "patterns": ["apa sih tanda-tanda quarter life crisis",
+                        "ciri-ciri penderita quarter life crisis",
+                        "apa ciri-ciri orang yang menderita quarter life crisis",
+                        "bagaimana cara mengetauhi seseorang mengalami quarter life crisis"],
+            "responses": ["Berikut ini adalah beberapa hal yang bisa menjadi tanda seseorang sedang mengalami quarter life crisis: Sering merasa bingung mengenai masa depannya. Merasa terjebak dalam situasi yang tidak disukai. Sulit membuat keputusan ketika dihadapkan dengan beberapa pilihan. Kurang motivasi dalam menjalani aktivitas sehari-hari. Sulit menentukan apakah harus menjalani hidup sesuai dengan keinginan diri sendiri atau sesuai dengan tuntutan keluarga dan masyarakat. Khawatir akan tertinggal dalam ketidakpastian hidup seorang diri. Merasa iri dengan teman sebaya yang sudah lebih dulu mencapai impiannya."]
+        },
+
+        {"tag": "menghadapiQuarterLifeCrisis",
+            "patterns": ["Cara untuk menghadapi quarter life crisis",
+                        "bagaimana kita mengatasi quarter life crisis"],
+            "responses": ["Untuk menghadapi quarter life crisis, ada beberapa hal yang bisa Anda lakukan, antara lain: Menghindari membandingkan diri dengan orang lain. Mengubah keraguan yang dimiliki menjadi sebuah tindakan. Mencari orang-orang yang dapat mendukung dan menginspirasi Anda. Mencintai diri sendiri. Menjalani gaya hidup yang sehat dan mengelola stres dengan baik. Namun, apabila Anda masih merasakan kesulitan dalam menghadapi hal ini, jangan ragu untuk berkonsultasi dengan tenaga profesional seperti psikolog"]
+        },
+
+        {"tag": "quarterLifeCrisisGangguanMental",
+            "patterns": ["Apa quarter life crisis termasuk gangguan mental?",
+                        "quarter life crisis apakah gangguan mental"],
+            "responses": ["Sebenarnya wajar jika Anda mengalami quarter life crisis. Namun, ini tidak boleh dianggap remeh, karena bila tidak dihadapi dengan bijak, quarter life crisis bisa berubah menjadi depresi"]
+        },
+
+        {"tag": "gangguankepribadian",
+            "patterns": ["Apa itu Gangguan kepribadian?",
+                        "kepribadian",
+                        "Gangguan kepribadian",
+                        "Gangguan kepribadian adalah"],
+            "responses": ["Gangguan kepribadian adalah salah satu jenis penyakit mental. Kondisi ini menyebabkan penderitanya memiliki pola pikir dan perilaku yang tidak normal dan sulit untuk diubah. Penderita gangguan kepribadian juga mengalami kesulitan untuk memahami situasi dan orang lain."]
+        },
+
+        {"tag": "penyebabGangguanKepribadian", 
+            "patterns": ["faktor penyebab gangguan kepribadian muncul",
+                        "apa sih yang dapat menyebabkan gangguan kepribadian",
+                        "hal yang menyebabkan seseorang mengalami gangguan kepribadian"],
+            "responses": ["Dua faktor utama yang dinilai sangat berperan besar dalam terbentuknya gangguan kepribadian adalah gen yang diwariskan oleh orang tua (temperamen) dan lingkungan.Berikut ini adalah beberapa faktor yang diduga dapat meningkatkan risiko terjadinya gangguan kepribadian:1. Memiliki kelainan pada struktur otak atau komposisi kimia di dalam otak2. Menghabiskan masa kecil di dalam kehidupan keluarga yang tidak harmonis3. Memiliki perasaan sering diabaikan sejak masa kanak-kanak4. Mengalami pelecehan sejak kanak-kanak, baik secara verbal maupun fisik5. Memiliki tingkat pendidikan yang rendah6. Menjalani hidup di tengah keluarga yang mengalami kesulitan ekonomi"]
+        },
+
+        {"tag": "gejalaGangguanKepribadian",
+            "patterns": ["Gejala seseorang mengalami gangguan kepribadian",
+                        "apa saja gejala yang muncul bagi penderita gangguan kepribadian",
+                        "bagaimana cara mengetahui orang mengalami gangguan kepribadian"],
+            "responses": ["Berdasarkan jenisnya, gangguan kepribadian dibagi menjadi tiga kelompok, yaitu gangguan kepribadian kelompok A, kelompok B, dan kelompok C."]
+        },
+
+        {"tag": "mengatasiPesimis",
+            "patterns": ["Cara untuk mengatasi rasa pesimis",
+                        "menghilangkan rasa pesimis",
+                        "bagaimana cara kita agar bisa menghilangkan sifat rasa pesimis"],
+            "responses": ["Menghilangkan rasa pesimis dari dalam diri untuk berhasil mengembangkan diri, menggapai cita-cita, atau memberi positif impact ke lingkungan sekitar, kamu bisa latihan melakukan Langkah-langkah berikut ini :\n1.Berlatih menghadapi masalah secara sadar \n2.Mengamati setiap rasa yang hadir \n3.Mengambil makna positif dari situasi atau hal yang membuat stress \n4.Menuliskan Pengalaman, Pencapaian, dan Kelebihan diri \n5.Manajemen Prioritas6.Mencari dukungan sosial"]
+        },
+        
+        {"tag": "mengendalikanEmosi",
+            "patterns": ["cara Mengendalikan emosi yang berlebih agar tetap tenang",
+                        "bagaimana cara mengatasi emosi pada diri sendiri",
+                        "cara untuk menghilangkan emosi ketika sedang mengalami emosi"],
+            "responses": ["Anda dapat mengubah pikiran negatif menjadi pikiran positif sehingga, anda akan menjadi bersikap positif pula, dengan cara mengubah sudut pandang untuk melihat situasi tersebut menjadi lebih positif. Selain itu, coba tenangkan diri anda dengan mengambil napas panjang lalu tutup mata anda, kemudian sadarilah keberadaan, perasaan, dan pikiran anda saat ini termasuk keadaan sekitar anda. Hal ini dapat membuat anda lebih sadar dan bersikap lebih positif dalam merespons segala sesuatu."]
+        },
+
+        {"tag": "mengatasiManipulatif",
+            "patterns": ["Cara untuk mengatasi sifat manipulatif",
+                        "bagaimana cara agar bisa mengurangi sifat manipulatif"],
+            "responses": ["Sifat manipulatif dapat berupa mudah dekat dengan orang lain, sering mengajukan pertanyaan pancingan, membuat lelucon yang menyinggung, membuat orang lain merasa bersalah, sering membuat drama untuk keuntungan diri sendiri, tidak memberikan sesuaty untuk mendapatkan apa yang diinginkan dan lainnya.Jika memang Anda merasa seperti demikian di atas, beberapa hal yang dapat Anda lakukan adalah :- Dengarkan saat orang lain berbicara, jangan memotong obrolan .- Anda harus menerima diri, bahwa tidak semua yang Anda inginkan dapat tercapai- Menciptakan hubungan yang sehat- Terima penolakan atau jawaban tidak dari orang lain, dan janagan membuat orang lain merasa bersalah- Jangan lupa balas kebaikan yang orang lain berikan kepada Anda- Jangan mengharapkan imbalan atas apa yang Anda inginkan- Posisikan diri Anda seakan akan Anda adalah orang lain sebagai lawan bicara."]
+        },
+
+        {"tag": "pengertianSelfHarm",
+            "patterns": ["self harm",
+                        "melukai diri sendiri?",
+                        "Apa artinya self harm?",
+                        "self harm adalah",
+                        "pengertian self harm"],
+            "responses": ["merupakan suatu tindakan atau dorongan untuk menyakiti atau melukai diri yang tentunya akan merugikan dirinya sendiri pula"]
+        },
+
+        {"tag": "selfHarmWajarTidak ",
+            "patterns": ["Apakah self harm itu wajar?",
+                        "melukai diri sendiri apakah hal yang normal"],
+            "responses": ["Melukai orang lain memang dilarang, tapi, bukan berarti menyakiti diri (self harm) itu diperbolehkan. Kalau sudah ada tanda-tanda seperti ini, lebih baik cari bantuan, ya!. Self-harm atau self-injury terkadang dilakukan seseorang saat perasaan negatif muncul"]
+        },
+
+        {"tag": "penyebabSelfHarm",
+            "patterns": ["penyebab self harm karena apa?",
+                        "apa saja faktor seseorang melukai diri sendiri ",
+                        "kenapa bisa orang bisa mengalami self harm",
+                        "apa sih yang dapat menyebabkan seseorang bisa melakukan self harm"],
+            "responses": ["Penyebab Umum Self Harm atau melukai diri sendiri Gangguan kesehatan mental seperti depresi dan bipolar. Penyalahgunaan obat-obatan dan alkohol. Mendapatkan intimidasi dari pihak tertentu. Adanya tekanan di sekolah atau tempat kerja"]
+        },
+
+        {"tag": "alasanSelfHarm",
+            "patterns": ["Mengapa remaja masa kini sering melakukan self harm?",
+                        "alasan kenapa self harm sering dilakukan saat remaja",
+                        "kenapa anak remaja bisa mengalami self harm"],
+            "responses": ["Self harm biasanya dilakukan untuk melampiaskan emosi yang sedang dialami oleh para remaja, misalnya marah, cemas, stres, depresi, putus asa, atau rasa bersalah yang tidak dapat diatasi dengan baik."]
+        },
+
+        {"tag": "mengatasiSelfHarm",
+            "patterns": ["Bagaimana cara berhenti melakukan self harm?",
+                        "cara untuk mengatasi self harm",
+                        "apa cara agar tidak melukai diri sendiri",
+                        "cara mengendalikan penderita self harm",
+                        "bagaimana mencegah agar tidak melakukan self harm"],
+            "responses": ["Cara Mencegah Self Harm Ngborol dengan Teman. Cara mencegah self harm yang pertama adalah berbicara dengan teman. ... Tuliskan Keluh Kesah Kamu. Selain berbicara dengan teman kamu juga bisa membenahi perasaanmu dengan menuliskannya. ... Menangis. ... Bersihkan Lingkungan dari Benda-Benda yang Bisa Melukai. ... Berbagai Hal Lainnya."]
+        },
+
+        {"tag": "perbedaanSelfHarmselfInjury",
+            "patterns": ["Apakah self harm dan self injury itu sama?",
+                        "bedanya self harm sama self injury"],
+            "responses": ["Menyakiti diri dapat dilakukan secara fisik. Menurut Mary self harm muncul karena adanya kecenderungan ingin menyakiti diri sendiri, yang nantinya akan mengarah pada self injury atau menyakiti diri sendiri sebagai pelampiasan emosi"]
+        },
+
+        {"tag": "jenisSelfHarm",
+            "patterns": ["Apa saja jenis self harm",
+                        "apa aja jenis-jenis self harm",
+                        "ada berapa jenis self harm atau perbuatan menyakiti diri sendiri",
+                        "ada berapa perbuatan self harm"],
+            "responses": ["Jenis-Jenis Perbuatan Self Harm atau Menyakiti Diri Sendiri diantaranya : Superficial Self Mutilation merupakan yang terbilang ringan dan wajar, bahkan dilakukan dengan sadar. Stereotypic Self Mutilation diartikan sebagai tindakan yang digunakan oleh seseorang untuk mengendalikan atau bisa dikatakan menguasai rasa sakitnya itu secara penuh emosi, serta menghilangkan kehampaan. Major Self Mutilation merupakan yang paling ekstrem. Hal itu karena orang yang melakukan tindakan self harm jenis ini, akan melukai salah satu organ atau bagian tubuhnya yang tentunya akan berakibat cedera permanen dan kerusakan organ tubuh."]   
+        },
+
+        {"tag": "efekSelfHarm",
+            "patterns": ["Apa efek self harm?",
+                        "efek melukai diri sendiri",
+                        "seperti apa efek perbuatan menyakiti diri sendiri",
+                        "akibatnya seseorang melakukan perbuatan self harm"],
+            "responses": ["Berpotensi bahaya bagi kesehatan fisik. Menyakiti diri sendiri secara fisik tentu berbahaya buat dirimu. Kulit akan terluka, memar, hingga membahayakan organ-organ vital seperti bagian kepala, dada dan area sensitif."]
+        },
+
+        {"tag": "alasanOrangSelfHarm",
+            "patterns": ["Kenapa seseorang melakukan pebuatan self harm?",
+                        "apa alasan melakukan perbuatan self harm",
+                        "kenapa bisa orang melukai diri sendiri",
+                        "kenapa orang mengalami perbuatan menyakiti diri sendiri"],
+            "responses": ["Beberapa alasan orang melakukan self harm\n1. Memendam Perasaan Negatif Terlalu LamaPenyebab self-harm bisa jadi karena menumpuk perasaan negatif terlalu lama, seperti rasa takut akibat di-bully, tekanan yang besar di sekolah atau tempat kerja, masalah dengan keluarga, dan lainnya.Jika masalah tersebut berlangsung lama dan tampak tak akan berakhir, maka ia cenderung akan melakukan self-harm.Saat melukai diri sendiri, ada perasaan tenang dan senang walaupun hanya sementara.\n2. Mencari PerhatianAda juga yang melakukan self-harm karena ingin mencari perhatian. Biasanya orang tersebut memamerkan perilaku self-harm-nya, baik itu di kehidupan nyata maupun di dunia maya. Dengan harapan, setelah ia melakukan hal tersebut, ia akan ditanya oleh lingkungan sekitarnya. Ketika ia mendapat perhatian itu, ia menjadi senang.\n3. Tidak Mendapat Dukungan dari Orang-Orang di SekitarnyaSeseorang yang mengalami masalah dalam hidupnya tentu berharap mendapat dukungan dari orang-orang di sekitarnya, seperti keluarga, kerabat, dan temannya. Namun ketika mereka tidak memperoleh dukungan tersebut, maka salah satu pelariannya adalah dengan melakukan self-harm.\n4. Memiliki Pengalaman Traumatis di Masa LaluBeberapa orang yang melakukan self-harm biasanya memiliki pengalaman buruk yang membuatnya trauma, seperti menjadi korban kekerasan atau bencana alam.Mereka menganggap, menyakiti diri sendiri akan membantu mereka melupakan trauma tersebut.\n5. Ketidakmampuan dalam Mengekspresikan DiriTindakan self-harm bisa muncul akibat ketidakmampuan seseorang untuk mengekspresikan emosi, seperti rasa marah, malu, frustrasi, dan sebagainya.Orang-orang yang menyakiti dirinya sering mengatakan bahwa mereka tidak cocok dengan sesuatu atau merasa tidak dipahami oleh orang lain.Self-harm dianggap satu-satunya cara untuk merasa lebih lega dan mengekspresikan perasaan yang mereka rasakan.\n6. Mempunyai Masalah Kesehatan MentalPenyebab lain dari self-harm adalah gangguan mental. Beberapa jenis gangguan mental yang dapat membuat seseorang menyakiti diri sendiri, yaitu depresi, bipolar, obsesif kompulsif, hingga psikosis."]
+        },
+
+        {"tag": "perbuatanSelfHarm",
+            "patterns": ["Apa saja contoh perbuatan self harm",
+                        "kaya apa perbuatan menyakiti sendiri?",
+                        "seperti apa sih perbuatan self harm"],
+            "responses": ["Berbagai bentuk contoh self-harm meliputi memukul atau membenturkan diri sendiri ke dinding, menyayat tubuh (cutting tangan) dengan silet, pisau, atau pecahan beling, hingga meminum racun."]
+        },
+
+        {"tag": "keluarZonaNyaman",
+            "patterns": ["Cara keluar dari zona nyaman",
+                        "keluar zona nyaman",
+                        "bagaimana agar kita bisa keluar dari zona nyaman",
+                        "bagi orang pemalas gimana caranya agar berani mencoba hal baru"],
+            "responses": ["Berada dalam zona nyaman bukanlah hal yang negatif, tetapi perlu diketahui bahwa ada banyak manfaat yang terkait dengan keluar dari zona tersebut sesekali. Cara yang dapat dilakukan sebagai upaya keluar dari zona nyaman antara lain memulai dengan perlahan, mengubah rutinitas atau kebiasaan yang kita lakukan, tetapkan tujuan yang ingin dicapai, Mendapatkan dukungan orang terdekat, percaya dengan diri sendiri, bertemu komunitas juga perlu untuk mendukung dan memberikan banyak saran ."]
+        },
+
+        {"tag": "kesehatanMental",
+            "patterns": ["Kesehatan mental meliputi apa saja?", 
+                        "jenis-jenis kesehatan mental", 
+                        "kesehatan mental?",
+                        "apa saja sih kesehatan mental"],
+            "responses": ["Kesehatan mental mencakup kesehatan emosional, psikologis, dan sosial. Kesehatan mental sangat penting pada setiap tahap kehidupan, dari kecil hingga dewasa. Kesehatan mental memengaruhi bagaimana seseorang berpikir, merasakan, dan bertindak dalam kehidupan sehari-hari."]
+        },
+
+        {"tag": "tandaMentalSehat",
+            "patterns": ["bagaimana tanda-tanda mental yang sehat?", 
+                        "mental yang sehat",
+                        "seperti apa mental yang sehat",
+                        "apa saja ciri-ciri mental sehat",
+                        "cara mengetahui mental kita sehat"],
+            "responses": ["Tanda bahwa kamu memiliki kondisi kesehatan mental yang baik.Jiwa optimisme yang tinggi. Pexels/bruce mars. ... Kemampuan kendali diri yang baik. Pexels/bruce mars. ... 3. Jarang merasa stres. Pexels/Pixabay. ... Mudah bangkit dari keterpurukan. Pexels/Rulan Zzaebok. ... Terbuka dan mau menerima kritik dari orang lain."]
+        },
+        {"tag": "mentalIllnes",
+            "patterns": ["Bagaimana cara mengetahui Mental Illness?",
+                        "gangguan mental",
+                        "gangguan mental pada umumnya",
+                        "apa sih gangguan mental"],
+            "responses": ["Ciri-Ciri Gangguan Kesehatan Mental. Merasa sedih berkepanjangan, kadang tanpa sebab yang jelas.Mati rasa atau tak peduli dengan lingkungan sekitar.Merasa lelah yang signifikan, tidak berenergi, dan mengalami masalah tidur.Sering marah berlebihan dan sangat sensitif.Merasa putus asa dan tak berdaya."]
+        },
+
+        {"tag": "resikoMentalHealth",
+            "patterns": ["Apa saja resiko yang dihadapi karena masalah mental health",
+                        "faktor penderita mental health",
+                        "kenapa seseorang bisa terkena gangguan mental",
+                        "penyebab orang mengalami gangguan mental"],
+            "responses": ["Beberapa faktor resiko gangguan mental, antara lain: Perempuan memiliki risiko tinggi mengidap depresi dan kecemasan, sedangkan laki-laki memiliki resiko mengidap ketergantungan zat dan antisosial. Perempuan setelah melahirkan. Memiliki masalah di masa kanak-kanak atau masalah gaya hidup. Memiliki profesi yang memicu stres, seperti dokter dan pengusaha. Memiliki riwayat anggota keluarga atau keluarga dengan penyakit mental. Memiliki riwayat kelahiran dengan kelainan pada otak. Mengalami kegagalan dalam hidup, seperti sekolah atau kehidupan kerja. Menyalahgunakan alkohol atau obat-obatan terlarang."]
+        },
+
+        {"tag": "mencegahMentalHealth",
+            "patterns": ["Bagaimana cara mencegah masalah gangguan mental atau mental health",
+                        "cara agar terhindar dari gangguan mental",
+                        "bagaimana menghilangkan gangguan mental?",
+                        "mencegah tejadinya mentalhealth"],
+            "responses": ["Beberapa upaya yang dapat dilakukan untuk mencegah gangguan mental, yaitu: Melakukan aktivitas fisik dan tetap aktif secara fisik. Membantu orang lain dengan tulus. Memelihara pikiran yang positif. Memiliki kemampuan untuk mengatasi masalah. Mencari bantuan profesional jika diperlukan. Menjaga hubungan baik dengan orang lain. Menjaga kecukupan tidur dan istirahat."]
+        }
+    ]
+}
