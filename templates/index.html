@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="static/chat.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>Nalar Chatbot</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <link href="{{ url_for('static', filename='img/mentalhealt.png') }}" rel="icon">
+        <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900"rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center">
+            <div class="container d-flex align-items-center">
+                <div class="logo me-auto">
+                    <h1><a href= "{{ url_for('index') }}">naLar</a></h1>
+                </div>
+
+                <!-- .navbar -->
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a href="{{ url_for('artikel') }}">Artikel</a></li>
+                        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                        <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->
+
+            </div>
+        </header>
+        <!-- ======= End Header ======= -->
+
+        <!-- ======= Hero Section ======= -->
+        <section id="hero">
+            <div class="hero-container">
+                <h1>Selamat Datang di naLar </h1>
+                <h2>Sebuah aplikasi web yang memungkinkan anda untuk bisa berinteraksi dengan bot nalar kami.</h2>
+                <div>
+                    <img class="col-md-2" src="{{ url_for('static', filename='img/wellbeing.png') }}" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <main id="main">
+            <section class="call-to-action">
+                <div class="container">
+                    <div class="text-center">
+                        <h3>"Mentalhealth"</h3>
+                        <p> "There is no health without mental health"</p>
+                        <p>-David Satcher-</p>
+                    </div>
+                </div> 
+            </section>
+            <section id="faq" class="faq section-bg">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Yang Paling sering di tanyakan</h2>
+                    </div>
+                    <ul class="faq-list">
+                        <li>
+                            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Apa itu mental health ? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                                <p>Keadaan sejahtera di mana individu menyadari potensi yang dimilikinya, mampu menanggulangi tekanan hidup normal, bekerja secara produktif, serta mampu memberikan kontribusi bagi lingkungannya</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question"> Siapa yang paling rentan terkena masalah kesehatan mentak ? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                                <p>Kesehatan mental dapat menyerang siapa saja tanpa memandang fisik, ras, golongan, umur, dan sebagainya dari penderitanya. Menurut beberapa studi yang telah dilakukan, generasi milenial merupakan generasi yang paling rentan untuk terkena gangguan kesehatan mental dibandingkan dengan generasi yang lainnya.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question"> Bipolar <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                                <p>Bipolar yang dapat ditilik dari kondisi mood yang dinamis dan cenderung fluktuatif serta dinamis. Sederhananya, ketika individu memiliki perasaan yang tiba-tiba senang dan semangat lalu secara instan berubah lagi menjadi pemarah dan malas. Menurut WHO, bipolar ini berperan secara nyata terhadap banyaknya kasus bunuh diri di dunia. Oleh karena itu, kondisi bipolar ini harus ditangani dengan cepat dan tepat dengan pemberian obat serta mengikuti kegiatan psikoterapi.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question"> Kecemasan Berlebihan <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                                <p>kecemasan berlebihan atau Generalized Anxiety Disorder (GAD) merupakan kondisi dimana individu merasa cemas, takut, dan khawatir di atas batas normal. Di beberapa kasus, individu yang terdiagnosis memiliki gejala kecemasan berlebihan akan selalu dalam bayang-bayang rasa takut dan cemas di kurun waktu 3-6 bulan.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question"> Depresi <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                                <p>Depresi yang juga mirip dengan bipolar tetapi memiliki perbedaan. Dimana depresi merupakan kondisi hati yang sedang terguncang karena beberapa faktor sentimentil. Sedih dan acuh adalah dua tanda yang cukup sering ditemui dari individu yang mengalami depresi.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question"> Gangguan Stres Pasca Trauma (PTSD) <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                                <p>Gangguan stres pasca trauma atau yang sering disingkat sebagai PTSD. Gangguan mental health ini diakibatkan oleh trauma dari individu terhadap suatu peristiwa yang membekas di memorinya. Trauma yang dialami oleh individu yang mengalami PTSD cukup variatif. Tetapi secara general yang sering terjadi adalah kematian orang tua, kecelakaan, pelecehan seksual, hingga bencana alam.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ======= Our Team Section ======= -->
+                <div class="container">
+                    <div  id="team" class="team">
+                        <div class="section-title">
+                            <h2>Our Team</h2>
+                            <p>Dedikasi yang sebesarnya kepada. </p>
+                        </div>
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="member">
+                                    <img src="{{ url_for('static', filename='img/team/team-1.jpg') }}" alt="">
+                                    <h4>Rifli Yanto </h4>
+                                    <span>Universitas Teknokrat Indonesia </span>
+                                    <p>
+                                        Teknik Komputer
+                                    </p>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="member">
+                                    <img src="{{ url_for('static', filename='img/team/team-2.jpg') }}" alt="">
+                                    <h4>Lukman Nur Faizin</h4>
+                                    <span> Universitas Negeri Surabaya </span>
+                                    <p>
+                                        Teknik Informatika
+                                    </p>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="member"> 
+                                    <img src="{{ url_for('static', filename='img/team/team-3.jpg') }}" alt="">
+                                    <h4>Adinda Dhea Mutiara</h4>
+                                    <span>Universitas Muhamadiyah Semarang</span>
+                                    <p>
+                                        Berkuliah di jurusan S1-Statistika
+                                    </p>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="member"> 
+                                    <img src="{{ url_for('static', filename='img/team/team-4.jpg') }}" alt="">
+                                    <h4>Novi Kusumaningsih</h4>
+                                    <span>Universitas Muhamadiyah Semarang</span>
+                                    <p>
+                                        Berkuliah di jurusan S1-Statistika
+                                    </p>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="member">
+                                    <img src="{{ url_for('static', filename='img/team/team-5.jpg') }}" alt="">
+                                    <h4>Anggi Hardiansyah</h4>
+                                    <span>Universitas Bina Sarana Informatika</span>
+                                    <p>
+                                        Teknik Informatika
+                                    </p>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Our Team Section -->
+            </section>
+
+            <!-- ======= Contact Us Section ======= -->
+            <section id="contact" class="contact section-bg">
+                <div class="container">
+
+                    <div class="section-title">
+                        <h2> Hubungi Kami</h2>
+                        <p> Untuk konsultasi yang lebih lanjut anda dapat menghubungi kami melalui media sosial yang tercantum di bawah ini </p>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="contact-about">
+                                <h3>naLar</h3>
+                                <p> Membantu anda mencari dan mengenali gejala kesehaatan mental yang mungkin sedang anda rasakan </p>
+                                <div class="social-links">
+                                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="info">
+                                <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <p>Orbit Future Acadeny<br>Jakarta, Indonesia</p>
+                                </div>
+
+                                <div>
+                                    <i class="bi bi-envelope"></i>
+                                    <p>naLar@gmail.com</p>
+                                </div>
+
+                                <div>
+                                    <i class="bi bi-phone"></i>
+                                    <p>+62 5589 55488 55s</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-12">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Contact Us Section -->
+
+        </main>
+        
+        <!-- Proces Chatbot -->
+        <div class="container">
+            <div class="chatbox">
+                <div class="chatbox__support">
+                    <div class="chatbox__header">
+                        <div class="chatbox__image--header">
+                            <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                        </div>
+                        <div class="chatbox__content--header">
+                            <h4 class="chatbox__heading--header">Nalar</h4>
+                            <p class="chatbox__description--header">Hello. saya Nalar, apakah ada yang mau tanyakan terkait mentalhealt?</p>
+                        </div>
+                    </div>
+                    <div class="chatbox__messages">
+                        <div></div>
+                    </div>
+                    <div class="chatbox__footer">
+                        <input type="text" placeholder="Write a message...">
+                        <button class="chatbox__send--footer send__button">Send</button>
+                    </div>
+                </div>
+                <div class="chatbox__button">
+                    <button><img src="{{ url_for('static', filename='img/chatbox-icon.svg') }}" /></button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $SCRIPT_ROOT = '{{ request.script_root|tojson }}';
+        </script>
+        <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+        <!-- Proces Chatbot -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>naLar</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    
+        <!-- Vendor JS Files --> 
+        <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+        <script src="{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+
+        <!-- Template Main JS File -->
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    </body>
+</html>

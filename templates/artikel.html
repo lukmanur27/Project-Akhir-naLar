@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="static/chat.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>Nalar Chatbot</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <link href="{{ url_for('static', filename='img/mentalhealt.png') }}" rel="icon">
+        <link href="{{ url_for('static', filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900"rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center">
+            <div class="container d-flex align-items-center">
+                <div class="logo me-auto">
+                    <h1><a href= "{{ url_for('index') }}">naLar</a></h1>
+                </div>
+
+                <!-- .navbar -->
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="{{ url_for('index') }}">Home</a></li>
+                        <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->
+
+            </div>
+        </header>
+        <!-- ======= End Header ======= -->
+
+        <main id="main">
+            <section class="call-to-action">
+                <div class="container">
+                    <div class="text-center">
+                        <h3>"Mentalhealth"</h3>
+                        <p> "There is no health without mental health"</p>
+                        <p>-David Satcher-</p>
+                    </div>
+                </div> 
+            </section>
+            <section id="faq" class="faq section-bg">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Artikel Terkait Gangguan mental</h2>
+                    </div>
+                    <ul class="faq-list">
+                        <li>
+                            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question"> Artikel <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                                <p>Masalah kesehatan jiwa telah menjadi masalah kesehatan yang belum terselesaikan di tengah-tengah masyarakat, baik di tingkat global maupun nasional. Terlebih di masa pandemi COVID-19, permasalahan kesehatan jiwa akan semakin berat untuk diselesaikan.
+                                   Dampak dari pandemi COVID-19 ini tidak hanya terhadap kesehatan fisik saja, namun juga berdampak terhadap kesehatan jiwa dari jutaan orang, baik yang terpapar langsung oleh virus maupun pada orang yang tidak terpapar. Dirjen Pencegahan dan Pengendalian Penyakit, Kemenkes dr. Maxi Rein Rondonuwu mengatakan saat ini masyarakat masih berjuang mengendalikan penyebaran virus COVID-19, tapi di sisi lain telah menyebar perasaan kecemasan, ketakutan, tekanan mental akibat dari isolasi, pembatasan jarak fisik dan hubungan sosial, serta ketidakpastian. “Hal-hal tersebut tentu berdampak terhadap terjadinya peningkatan masalah dan gangguan kesehatan jiwa di masyarakat, Riset Kesehatan Dasar (Riskesdas) 2018, menunjukkan lebih dari 19 juta penduduk berusia lebih dari 15 tahun mengalami gangguan mental emosional, dan lebih dari 12 juta penduduk berusia lebih dari 15 tahun mengalami depresi, Selain itu berdasarkan Sistem Registrasi Sampel yang dilakukan Badan Litbangkes tahun 2016, diperoleh data bunuh diri pertahun sebanyak 1.800 orang atau setiap hari ada 5 orang melakukan bunuh diri, serta 47,7% korban bunuh diri adalah pada usia 10-39 tahun yang merupakan usia anak remaja dan usia produktif.
+                                   Direktur Pencegahan dan Pengendalian Masalah Kesehatan Jiwa dan Napza Dr.Celestinus Eigya Munthe menjelaskan masalah kesehatan jiwa di Indonesia terkait dengan masalah tingginya prevalensi orang dengan gangguan jiwa. Untuk saat ini Indonesia memiliki prevalensi orang dengan gangguan jiwa sekitar 1 dari 5 penduduk, artinya sekitar 20% populasi di Indonesia itu mempunyai potensi-potensi masalah gangguan jiwa. Ditambah lagi sampai saat ini belum semua provinsi mempunyai rumah sakit jiwa sehingga tidak semua orang dengan masalah gangguan jiwa mendapatkan pengobatan yang seharusnya karena terbatasnya sarana prasarana dan tingginya beban akibat masalah gangguan jiwa. “Masalah sumber daya manusia profesional untuk tenaga kesehatan jiwa juga masih sangat kurang, karena sampai hari ini jumlah psikiater sebagai tenaga profesional untuk pelayanan kesehatan jiwa kita hanya mempunyai 1.053 orang, Artinya, satu psikiater melayani sekitar 250 ribu penduduk. Menurutnya, ini suatu beban yang sangat besar dalam upaya meningkatkan layanan kesehatan jiwa di Indonesia. Pemerintah daerah harus menjadikan program dan pelayanan kesehatan jiwa dapat menjadi fokus perhatian, tentunya dengan menyediakan berbagai sarana dan prasarana terkait kesehatan jiwa yang memadai.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Baca Artikel lainnya <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                                <p><a href="https://www.halodoc.com/kesehatan/kesehatan-mental">Artikel Halodoc</a></p>
+                                <p><a href="https://www.alodokter.com/kesehatan-mental#:~:text=Gangguan%20mental%20atau%20gangguan%20jiwa,penyakit%20mental%20juga%20ada%20obatnya.">Artikel Alodokter</a></p>
+                                <p><a href="https://www.klikdokter.com/penyakit/kesehatan-mental">Artikel klikdokter</a></p>
+                                <p><a href="https://www.merdeka.com/trending/pengertian-gangguan-mental-atau-jiwa-beserta-gejala-amp-penyebabnya-ketahui-sejak-dini-kln.html">Artikel Merdeka.com</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ======= Contact Us Section ======= -->
+            <section id="contact" class="contact section-bg">
+                <div class="container">
+
+                    <div class="section-title">
+                        <h2> Hubungi Kami</h2>
+                        <p> Untuk konsultasi yang lebih lanjut anda dapat menghubungi kami melalui media sosial yang tercantum di bawah ini </p>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="contact-about">
+                                <h3>naLar</h3>
+                                <p> Membantu anda mencari dan mengenali gejala kesehaatan mental yang mungkin sedang anda rasakan </p>
+                                <div class="social-links">
+                                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="info">
+                                <div>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <p>Orbit Future Acadeny<br>Jakarta, Indonesia</p>
+                                </div>
+
+                                <div>
+                                    <i class="bi bi-envelope"></i>
+                                    <p>naLar@gmail.com</p>
+                                </div>
+
+                                <div>
+                                    <i class="bi bi-phone"></i>
+                                    <p>+62 5589 55488 555</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-12">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact Us Section -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>naLar</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    
+        <!-- Vendor JS Files --> 
+        <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+        <script src="{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+
+        <!-- Template Main JS File -->
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    </body>
+</html>
